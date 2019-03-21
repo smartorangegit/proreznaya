@@ -1,0 +1,45 @@
+@import "compass/reset";
+@import "compass/css3/font-face";
+
+@include font-face("Cormorant-Regular", font-files("Cormorant-Regular.ttf"));
+@include font-face("Cormorant-Light", font-files("Cormorant-Light.ttf"));
+@include font-face("Cormorant-SemiBoldItalic", font-files("Cormorant-SemiBoldItalic.ttf"));
+@include font-face("MuseoSansCyrl_900", font-files("MuseoSansCyrl_900.otf"));
+@include font-face("MuseoSansCyrl_300", font-files("MuseoSansCyrl_300.otf"));
+@include font-face("PoiretOne-Regular", font-files("PoiretOne-Regular.ttf"));
+
+
+
+$cormorant : 	"Cormorant-Regular";
+$cormo-L : 		"Cormorant-Light";
+$cormo-SBI : 	"Cormorant-SemiBoldItalic";
+$museo : 		"MuseoSansCyrl_900";
+$museoL :		"MuseoSansCyrl_300";
+$poiret : 		"PoiretOne-Regular";
+
+$yellow :		 #FFB519; /* rgba(255,181,25,.0)*/
+$grey :			 #b3b3b3;
+$text-grey:		 #4d483e;
+
+
+@mixin transition($in) {
+	transition:$in;
+	-webkit-transition:$in;
+	-moz-transition:$in;
+	-o-transition:$in;
+	-ms-transition:$in;
+}
+@mixin transform($in) {
+	transform:$in;
+	-webkit-transform:$in;
+	-moz-transform:$in;
+	-o-transform:$in;
+	-ms-transform:$in;
+}
+@mixin animation($in) {
+	animation:$in;
+	-webkit-animation:$in;
+	-moz-animation:$in;
+	-o-animation:$in;
+	-ms-animation:$in;
+}

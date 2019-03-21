@@ -1,0 +1,985 @@
+/*for all pages*/
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Cormorant-Regular";
+  src: url('/fonts/Cormorant-Regular.ttf?1465938000') format('truetype');
+}
+@font-face {
+  font-family: "Cormorant-Light";
+  src: url('/fonts/Cormorant-Light.ttf?1465938000') format('truetype');
+}
+@font-face {
+  font-family: "Cormorant-SemiBoldItalic";
+  src: url('/fonts/Cormorant-SemiBoldItalic.ttf?1465938000') format('truetype');
+}
+@font-face {
+  font-family: "MuseoSansCyrl_900";
+  src: url('/fonts/MuseoSansCyrl_900.otf?1403527152') format('opentype');
+}
+@font-face {
+  font-family: "MuseoSansCyrl_300";
+  src: url('/fonts/MuseoSansCyrl_300.otf?1403211440') format('opentype');
+}
+@font-face {
+  font-family: "PoiretOne-Regular";
+  src: url('/fonts/PoiretOne-Regular.ttf?1330466400') format('truetype');
+}
+/* rgba(255,181,25,.0)*/
+/* line 3, ../scss/pages.scss */
+.header-pages {
+  padding: 110px 10px 30px;
+}
+/* line 4, ../scss/pages.scss */
+.header-pages .wrapper {
+  max-width: 1200px;
+}
+/* line 8, ../scss/pages.scss */
+.header-pages h1.content_name {
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+  text-indent: 0;
+}
+/* line 13, ../scss/pages.scss */
+.header-pages h1.content_name:after, .header-pages h1.content_name:before {
+  content: '';
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  width: 6%;
+  height: 1px;
+  background-color: #4d483e;
+}
+/* line 23, ../scss/pages.scss */
+.header-pages h1.content_name:before {
+  left: auto;
+  right: 50%;
+}
+/* line 28, ../scss/pages.scss */
+.header-pages .breadcrumbs {
+  font-size: 20px;
+  justify-content: flex-start;
+}
+/* line 31, ../scss/pages.scss */
+.header-pages .breadcrumbs__no-active {
+  color: #FFB519;
+  pointer-events: none;
+}
+
+/* line 38, ../scss/pages.scss */
+.pages__inner .wrapper {
+  max-width: 1200px;
+}
+
+/* line 42, ../scss/pages.scss */
+.pages-subname {
+  font-size: 30px;
+  font-family: "Cormorant-Regular";
+  color: #4d483e;
+}
+
+/* line 1, ../scss/pages/_documents.scss */
+.pages__inner {
+  padding: 20px 0;
+}
+
+/* line 4, ../scss/pages/_documents.scss */
+.documents__left {
+  width: 30%;
+}
+
+/* line 7, ../scss/pages/_documents.scss */
+.documents__right {
+  width: 65%;
+}
+
+/* line 12, ../scss/pages/_documents.scss */
+.documents-accordeon .btn--radius {
+  margin: 24px 0;
+}
+/* line 15, ../scss/pages/_documents.scss */
+.documents-accordeon p {
+  padding: 10px 0;
+}
+/* line 17, ../scss/pages/_documents.scss */
+.documents-accordeon p.flex {
+  justify-content: flex-start;
+}
+
+/* line 23, ../scss/pages/_documents.scss */
+.svg_look {
+  fill: #FFB519;
+  margin-right: 20px;
+}
+
+/* line 28, ../scss/pages/_documents.scss */
+.accordion-list {
+  border: 1px solid #ddd;
+}
+/* line 30, ../scss/pages/_documents.scss */
+.accordion-list:after {
+  content: "";
+  display: block;
+  height: 1em;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+/* line 38, ../scss/pages/_documents.scss */
+.accordion dd,
+.accordion__panel {
+  background-color: #eee;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/* line 44, ../scss/pages/_documents.scss */
+.accordionTitle,
+.accordion__Heading {
+  padding: 20px;
+  background-color: #ffffff;
+  display: block;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid #fafafa;
+  font-family: "Cormorant-Regular";
+  color: #4d483e;
+  font-size: 30px;
+  position: relative;
+}
+/* line 55, ../scss/pages/_documents.scss */
+.accordionTitle:before,
+.accordion__Heading:before {
+  content: url("data:image/svg+xml; utf8, <svg viewBox='0 0 129 129' xmlns='http://www.w3.org/2000/svg' version='1.1' width='20' height='20'><path d='m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z'></path></svg>");
+  position: absolute;
+  right: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+/* line 61, ../scss/pages/_documents.scss */
+.accordionTitle:hover,
+.accordion__Heading:hover {
+  background-color: #f2f2f2;
+}
+
+/* line 65, ../scss/pages/_documents.scss */
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+  background-color: #f2f2f2;
+}
+/* line 68, ../scss/pages/_documents.scss */
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+  transform: rotate(-225deg);
+}
+
+/* line 73, ../scss/pages/_documents.scss */
+.accordionItem {
+  padding: 0 20px;
+  height: auto;
+  overflow: hidden;
+  max-height: 50em;
+  transition: max-height 1s;
+}
+@media screen and (min-width: 48em) {
+  /* line 73, ../scss/pages/_documents.scss */
+  .accordionItem {
+    max-height: 15em;
+    transition: max-height 0.5s;
+  }
+}
+
+/* line 85, ../scss/pages/_documents.scss */
+.accordionItem.is-collapsed {
+  max-height: 0;
+}
+
+/* line 88, ../scss/pages/_documents.scss */
+.no-js .accordionItem.is-collapsed {
+  max-height: auto;
+}
+
+/* line 91, ../scss/pages/_documents.scss */
+.animateIn {
+  animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+/* line 94, ../scss/pages/_documents.scss */
+.animateOut {
+  animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+    transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.9) rotateX(-60deg);
+  }
+}
+/* line 119, ../scss/pages/_documents.scss */
+.accordeon__btn-wrap {
+  padding: 10px 20px;
+}
+/* line 121, ../scss/pages/_documents.scss */
+.accordeon__btn-wrap .btn {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* line 126, ../scss/pages/_documents.scss */
+.documents__tree-1 {
+  position: absolute;
+  width: 35%;
+  left: 0;
+  top: 30px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* line 134, ../scss/pages/_documents.scss */
+.documents__tree-2 {
+  position: absolute;
+  width: 16%;
+  right: 10%;
+  top: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* line 1, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image figcaption,
+.touch .gallery-image figcaption,
+.mfp-with-zoom .mfp-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0);
+  padding: 1em;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  max-width: calc(100% - 9em);
+  line-height: 1.25;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 18, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image figcaption:after, html:not(.touch) .gallery-image figcaption:before,
+.touch .gallery-image figcaption:after,
+.touch .gallery-image figcaption:before,
+.mfp-with-zoom .mfp-title:after,
+.mfp-with-zoom .mfp-title:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  right: 100%;
+  bottom: 100%;
+}
+/* line 31, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image figcaption:after,
+.touch .gallery-image figcaption:after,
+.mfp-with-zoom .mfp-title:after {
+  left: 100%;
+  top: 100%;
+}
+
+/* line 37, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image figcaption.visible,
+html:not(.touch) .gallery-image:hover figcaption,
+.touch .gallery-image figcaption,
+.mfp-with-zoom .visible.mfp-title,
+.mfp-with-zoom.mfp-ready .mfp-title {
+  color: white;
+  text-transform: uppercase;
+  font-family: "MuseoSansCyrl_900";
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease 0.3s;
+}
+
+/* line 48, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image figcaption.visible:before, html:not(.touch) .gallery-image:hover figcaption:before, .touch .gallery-image figcaption:before, .mfp-with-zoom .visible.mfp-title:before, .mfp-with-zoom.mfp-ready .mfp-title:before, html:not(.touch) .gallery-image figcaption.visible:after, html:not(.touch) .gallery-image:hover figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .visible.mfp-title:after, .mfp-with-zoom.mfp-ready .mfp-title:after {
+  opacity: 1;
+}
+
+/* line 51, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image figcaption.visible:before, html:not(.touch) .gallery-image:hover figcaption:before, .touch .gallery-image figcaption:before, .mfp-with-zoom .visible.mfp-title:before, .mfp-with-zoom.mfp-ready .mfp-title:before {
+  right: -.3em;
+  bottom: -.3em;
+}
+
+/* line 55, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image figcaption.visible:after, html:not(.touch) .gallery-image:hover figcaption:after, .touch .gallery-image figcaption:after, .mfp-with-zoom .visible.mfp-title:after, .mfp-with-zoom.mfp-ready .mfp-title:after {
+  left: -.3em;
+  top: -.3em;
+}
+
+/* line 60, ../scss/pages/_gallery.scss */
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+/* line 66, ../scss/pages/_gallery.scss */
+.gallery {
+  -webkit-column-gap: 0;
+  column-gap: 0;
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
+@media (max-width: 767px) {
+  /* line 73, ../scss/pages/_gallery.scss */
+  .gallery {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+}
+/* line 79, ../scss/pages/_gallery.scss */
+.gallery-image {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* line 83, ../scss/pages/_gallery.scss */
+.gallery-image:before, .gallery-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 16px solid rgba(0, 0, 0, 0.16);
+  transition: all 0.2s;
+  will-change: border;
+}
+/* line 94, ../scss/pages/_gallery.scss */
+.gallery-image:after {
+  border-width: 0;
+}
+/* line 97, ../scss/pages/_gallery.scss */
+.gallery-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 103, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image {
+  overflow: hidden;
+}
+
+/* line 106, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image:hover:before {
+  border-width: 16px;
+}
+
+/* line 109, ../scss/pages/_gallery.scss */
+html:not(.touch) .gallery-image:hover:after {
+  border-width: 32px;
+}
+
+/* line 112, ../scss/pages/_gallery.scss */
+.touch .gallery-image figcaption {
+  top: auto;
+  bottom: 2em;
+}
+
+/* line 117, ../scss/pages/_gallery.scss */
+.mfp-with-zoom .mfp-container, .mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.3s ease-out;
+}
+
+/* line 123, ../scss/pages/_gallery.scss */
+.mfp-with-zoom.mfp-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 126, ../scss/pages/_gallery.scss */
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+/* line 129, ../scss/pages/_gallery.scss */
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 1;
+}
+
+/* line 132, ../scss/pages/_gallery.scss */
+.mfp-with-zoom.mfp-removing .mfp-container, .mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* line 135, ../scss/pages/_gallery.scss */
+.mfp-with-zoom img.mfp-img {
+  padding: 0;
+}
+
+/* line 138, ../scss/pages/_gallery.scss */
+.mfp-with-zoom .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+
+/* line 142, ../scss/pages/_gallery.scss */
+.mfp-with-zoom .mfp-container {
+  padding: 0;
+}
+
+/* line 145, ../scss/pages/_gallery.scss */
+.mfp-with-zoom .mfp-content {
+  overflow: hidden;
+}
+
+/* line 148, ../scss/pages/_gallery.scss */
+.mfp-with-zoom .mfp-bottom-bar {
+  top: auto;
+  bottom: 0;
+  margin-top: 0;
+}
+
+/* line 153, ../scss/pages/_gallery.scss */
+.mfp-with-zoom .mfp-title {
+  top: auto;
+  bottom: 2em;
+  display: none;
+}
+
+/* line 159, ../scss/pages/_gallery.scss */
+.mfp-arrow {
+  opacity: 1;
+  margin-top: 0 !important;
+  width: 20%;
+  height: 30%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 167, ../scss/pages/_gallery.scss */
+.mfp-arrow:before, .mfp-arrow:after {
+  margin: 0;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transition: all 0.15s;
+}
+
+/* line 179, ../scss/pages/_gallery.scss */
+.mfp-arrow:active {
+  -webkit-transform: translateY(-50%) scale(0.95);
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* line 184, ../scss/pages/_gallery.scss */
+.mfp-arrow-left {
+  left: 0;
+}
+
+/* line 187, ../scss/pages/_gallery.scss */
+.mfp-arrow-left:before, .mfp-arrow-left:after {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+/* line 191, ../scss/pages/_gallery.scss */
+.mfp-arrow-left:after {
+  margin-left: 2rem;
+}
+
+/* line 194, ../scss/pages/_gallery.scss */
+.mfp-arrow-left:hover:before, .mfp-arrow-left:active:before {
+  margin-left: 2rem;
+}
+
+/* line 197, ../scss/pages/_gallery.scss */
+.mfp-arrow-left:hover:after, .mfp-arrow-left:active:after {
+  margin-left: 0;
+}
+
+/* line 201, ../scss/pages/_gallery.scss */
+.mfp-arrow-right {
+  right: 0;
+}
+
+/* line 204, ../scss/pages/_gallery.scss */
+.mfp-arrow-right:before, .mfp-arrow-right:after {
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+/* line 208, ../scss/pages/_gallery.scss */
+.mfp-arrow-right:after {
+  margin-left: 2rem;
+}
+
+/* line 211, ../scss/pages/_gallery.scss */
+.mfp-arrow-right:hover:before {
+  margin-left: 2rem;
+}
+
+/* line 214, ../scss/pages/_gallery.scss */
+.mfp-arrow-right:hover:after {
+  margin-left: 0;
+}
+
+/* line 218, ../scss/pages/_gallery.scss */
+button.mfp-close {
+  opacity: 1;
+  margin-top: 0 !important;
+  width: 20%;
+  height: 30%;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+/* line 227, ../scss/pages/_gallery.scss */
+button.mfp-close:before, button.mfp-close:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  opacity: 1;
+  transition: all 0.15s;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+}
+
+/* line 243, ../scss/pages/_gallery.scss */
+button.mfp-close:before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 247, ../scss/pages/_gallery.scss */
+button.mfp-close:after {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* line 251, ../scss/pages/_gallery.scss */
+button.mfp-close:hover:before {
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* line 255, ../scss/pages/_gallery.scss */
+button.mfp-close:hover:after {
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+/* line 259, ../scss/pages/_gallery.scss */
+button.mfp-close:active {
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+/* line 1, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__tabs {
+  margin: auto;
+  width: 100%;
+  color: #4d483e;
+}
+
+/* line 7, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__link {
+  width: 32.5%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "MuseoSansCyrl_300";
+  text-transform: uppercase;
+  border: 1px solid #f0f0f0;
+  transition: 0.24s;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 24px;
+}
+/* line 18, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__link a {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  display: block;
+  opacity: 0.6;
+}
+/* line 24, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__link:before {
+  content: '';
+  position: absolute;
+  border: 8px solid #fff;
+  outline: 1px solid #b3b3b3;
+  box-shadow: 0 0 6px #fff;
+  z-index: -1;
+  top: calc(100% - 8px);
+  transform: rotate(45deg);
+  transition: 0.24s;
+  opacity: 0;
+}
+
+/* line 37, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__link.current {
+  border-color: #b3b3b3;
+}
+/* line 39, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__link.current a {
+  opacity: 1;
+}
+/* line 42, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__link.current:before {
+  opacity: 1;
+}
+
+/* line 46, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__tabs-container {
+  padding: 20px 60px;
+}
+
+/* line 49, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__img-container {
+  position: relative;
+}
+/* line 51, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__img-container:before {
+  content: '';
+  position: absolute;
+  background-color: #b3b3b3;
+  left: 50%;
+  margin-left: -.5px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+}
+
+/* line 63, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item {
+  height: 320px;
+  margin-top: -130px;
+  position: relative;
+}
+/* line 67, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 72, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:before {
+  content: attr(data-date);
+  position: absolute;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  transform-origin: left bottom;
+  transform: rotate(-90deg) translateX(-90%);
+  white-space: nowrap;
+}
+/* line 82, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0);
+  padding: 2em;
+  transition: all 0.2s ease;
+  text-align: center;
+  font-family: "MuseoSansCyrl_900";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/* line 96, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item figcaption:after, .hod-page__item figcaption:before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  padding: 1.6em 2em;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+  right: 100%;
+  bottom: 100%;
+}
+/* line 109, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item figcaption:after {
+  left: 100%;
+  top: 100%;
+}
+
+/* line 117, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:hover figcaption {
+  color: #ffffff;
+}
+/* line 119, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:hover figcaption:before, .hod-page__item:hover figcaption:after {
+  opacity: 1;
+}
+/* line 122, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:hover figcaption:before {
+  right: -1em;
+  bottom: -1em;
+}
+/* line 126, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:hover figcaption:after {
+  left: -1em;
+  top: -1em;
+}
+
+/* line 133, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:first-child {
+  margin-top: 0;
+}
+
+/* line 136, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:nth-child(even) {
+  margin-left: 55%;
+}
+/* line 138, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:nth-child(even):before {
+  left: calc(100% + 40px);
+}
+/* line 141, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:nth-child(even) .svg-hod {
+  top: -6px;
+  position: absolute;
+  right: calc(100% + 15px);
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+
+/* line 149, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:nth-child(odd) {
+  margin-right: 55%;
+}
+/* line 151, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:nth-child(odd):before {
+  left: -40px;
+}
+/* line 154, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item:nth-child(odd) .svg-hod {
+  top: -6px;
+  position: absolute;
+  left: calc(100% + 15px);
+}
+
+/* line 160, ../scss/pages/_hod-stroitelstva.scss */
+.hod-page__item-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 2, ../scss/pages/_video.scss */
+.video-page .pages-subname {
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+/* line 7, ../scss/pages/_video.scss */
+.video-page__item {
+  margin-bottom: 46px;
+}
+/* line 9, ../scss/pages/_video.scss */
+.video-page__item.flex {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+/* line 13, ../scss/pages/_video.scss */
+.video-page__item-img {
+  width: 47%;
+  height: 320px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 18, ../scss/pages/_video.scss */
+.video-page__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 24, ../scss/pages/_video.scss */
+.video-page__item-descr {
+  width: 47%;
+  padding-right: 200px;
+}
+/* line 28, ../scss/pages/_video.scss */
+.video-page__item:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  background-color: #b3b3b3;
+  width: 1px;
+  height: 100px;
+}
+
+/* line 37, ../scss/pages/_video.scss */
+.video-page__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* line 40, ../scss/pages/_video.scss */
+.svg_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: 0.36s;
+  -webkit-transition: 0.36s;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/* line 50, ../scss/pages/_video.scss */
+.video-page__item-img:hover .svg_video {
+  transform: translate(-50%, -50%) scale(1.2);
+  -webkit-transform: translate(-50%, -50%) scale(1.2);
+}
+
+/* line 56, ../scss/pages/_video.scss */
+.video-page__modal {
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 5;
+  transition-duration: 0.46s;
+  -webkit-transition-duration: 0.36s;
+}
+/* line 69, ../scss/pages/_video.scss */
+.video-page__modal .wrapper {
+  max-width: 1200px;
+  padding: 0 20px;
+  position: relative;
+  height: 100%;
+}
+/* line 75, ../scss/pages/_video.scss */
+.video-page__modal-close {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 81, ../scss/pages/_video.scss */
+.video-page__modal-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+/* line 90, ../scss/pages/_video.scss */
+.video-page__modal-container video {
+  object-fit: cover;
+}
+/* line 95, ../scss/pages/_video.scss */
+.video-page__modal--open {
+  visibility: visible;
+  opacity: 1;
+}
