@@ -95,6 +95,7 @@
                 <svg class="close_svg" viewBox="0 0 50 50" width="60" height="60" xmlns="http://www.w3.org/2000/svg"><path d="m37.304 11.282 1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ffb519"></path><path d="m12.696 11.282 26.022 26.02-1.414 1.415-26.022-26.02z" fill="#ffb519"></path></svg>
             </div>
             <div class="video-page__modal-container">
+                <!-- если через iframe, логика та же просто в data-source вставляем ссылку на видео, соответсвтенно меняем теги и атрибуты -->
                 <video src="/video/tree.mp4" autoplay poster muted width="100%" height="100%" controls></video>
             </div>
         </div>
@@ -123,12 +124,11 @@
             videos[i].addEventListener('click', function(){
                 videoSrc = this.dataset.source;
                 videoModalOpen()
-
             })
         }
 
         closeModal.addEventListener('click', videoModalClose )
-            
+
     }());
 
     </script>

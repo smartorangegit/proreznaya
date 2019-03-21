@@ -983,3 +983,178 @@ button.mfp-close:active {
   visibility: visible;
   opacity: 1;
 }
+
+/* line 2, ../scss/pages/_akcii.scss */
+.akcii-page .pages-subname {
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* line 7, ../scss/pages/_akcii.scss */
+.akcii-page__item {
+  margin-bottom: 46px;
+}
+/* line 9, ../scss/pages/_akcii.scss */
+.akcii-page__item.flex {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+/* line 13, ../scss/pages/_akcii.scss */
+.akcii-page__item-img {
+  width: 47%;
+  height: 320px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 18, ../scss/pages/_akcii.scss */
+.akcii-page__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 24, ../scss/pages/_akcii.scss */
+.akcii-page__item-descr {
+  width: 47%;
+  padding-right: 200px;
+}
+/* line 28, ../scss/pages/_akcii.scss */
+.akcii-page__item:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  background-color: #b3b3b3;
+  width: 1px;
+  height: 100px;
+}
+
+/* line 37, ../scss/pages/_akcii.scss */
+.akcii-page__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* akcii some */
+/* line 43, ../scss/pages/_akcii.scss */
+.content_name.content-name__main-name-akcii {
+  font-size: 48px;
+}
+
+/* line 46, ../scss/pages/_akcii.scss */
+.akcii-page .content_name {
+  text-align: center;
+  text-indent: 0;
+}
+
+/* line 51, ../scss/pages/_akcii.scss */
+.akcii-some-page .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+/* line 58, ../scss/pages/_akcii.scss */
+.akcii-some-page .slick-arrow.controls-right {
+  right: 0;
+}
+/* line 61, ../scss/pages/_akcii.scss */
+.akcii-some-page .slick-arrow.controls-left {
+  left: 0;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+/* line 66, ../scss/pages/_akcii.scss */
+.akcii-some-page__img-container {
+  position: relative;
+  width: 100%;
+}
+/* line 70, ../scss/pages/_akcii.scss */
+.akcii-some-page__img-item {
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-size: cover;
+  background-position: center center;
+}
+/* line 76, ../scss/pages/_akcii.scss */
+.akcii-some-page__descr {
+  margin: 40px auto;
+  max-width: 830px;
+  line-height: 1.8;
+  position: relative;
+}
+/* line 81, ../scss/pages/_akcii.scss */
+.akcii-some-page__descr:before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #b3b3b3;
+  top: 8px;
+  left: -75px;
+}
+/* line 90, ../scss/pages/_akcii.scss */
+.akcii-some-page__descr p {
+  margin: 12px 0;
+}
+/* line 94, ../scss/pages/_akcii.scss */
+.akcii-some-page__btn-box .btn {
+  max-width: 47%;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: 6px;
+  position: relative;
+  font-family: "MuseoSansCyrl_300";
+  color: #4d483e;
+  margin-bottom: 6px;
+}
+/* line 103, ../scss/pages/_akcii.scss */
+.akcii-some-page__btn-box .btn .flex {
+  background-color: #FFB519;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  max-width: 58px;
+  height: 100%;
+}
+/* line 111, ../scss/pages/_akcii.scss */
+.akcii-some-page__btn-box .btn .flex svg {
+  width: 100%;
+  height: 100%;
+  fill: #ffffff;
+}
+
+/* line 120, ../scss/pages/_akcii.scss */
+.akcii-fresh-page .content_name {
+  margin-bottom: 60px;
+}
+/* line 123, ../scss/pages/_akcii.scss */
+.akcii-fresh-page .akcii-page__item {
+  position: relative;
+}
+/* line 125, ../scss/pages/_akcii.scss */
+.akcii-fresh-page .akcii-page__item:after {
+  content: attr(data-date);
+  position: absolute;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "PoiretOne-Regular";
+  transform: rotate(-90deg);
+  transform-origin: left;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: left;
+  left: 50%;
+  top: 260px;
+}
+/* line 140, ../scss/pages/_akcii.scss */
+.akcii-fresh-page .akcii-page__item:nth-child(even) {
+  flex-direction: row;
+}
+/* line 143, ../scss/pages/_akcii.scss */
+.akcii-fresh-page .akcii-page__item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+/* line 146, ../scss/pages/_akcii.scss */
+.akcii-fresh-page .akcii-page__item-descr {
+  padding-right: 100px;
+}

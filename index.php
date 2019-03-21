@@ -73,7 +73,6 @@
                       </a>
                   </div>
                   <div class="img-wrap two-img-3" id="js-part-3">
-                      <!-- <img class="img_filtred" src="/img/main/bg-3.jpg" alt="ЖК На Прорезной"> -->
                       <img src="/img/main/bg-3.jpg" alt="ЖК На Прорезной">
                   </div>
               </div>
@@ -113,7 +112,6 @@
                   </div>
                   <div class="four_top_2">
                       <div class="img-wrap two-img-5" id="js-par-1">
-                          <!-- <img class="img_filtred" src="/img/main/bg-5.jpg" alt="ЖК На Прорезной"> -->
                           <img src="/img/main/bg-5.jpg" alt="ЖК На Прорезной">
                       </div>
                   </div>
@@ -121,13 +119,11 @@
               <div class="four_bottom flex">
                   <div class="four_bottom_1">
                       <div class="img-wrap two-img-6" id="js-par-2">
-                          <!-- <img class="img_filtred" src="/img/main/bg-6.jpg" alt="ЖК На Прорезной"> -->
                           <img src="/img/main/bg-6.jpg" alt="ЖК На Прорезной">
                       </div>
                   </div>
                   <div class="four_bottom_2">
                       <div class="img-wrap two-img-7" id="js-par-3">
-                          <!-- <img class="img_filtred" src="/img/main/bg-7.jpg" alt="ЖК На Прорезной"> -->
                           <img src="/img/main/bg-7.jpg" alt="ЖК На Прорезной">
                       </div>
                   </div>
@@ -195,7 +191,6 @@
 
               <img class="animate-tree tree--4" src="/img/svg/tree5.svg" alt="">
               <img class="animate-tree tree--5" src="/img/svg/tree4.svg" alt="">
-              <time datetime="2014-09-25T12:00"></time>
           </section>
 
 
