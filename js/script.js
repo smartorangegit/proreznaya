@@ -225,6 +225,15 @@ $(window).bind('scroll load' , function(){
                 $(this).removeClass("animated");
               }
       });
+      $(".about-img-js").each(function(){
+          elTop = $(this).offset().top;
+            if ( (elTop - h) <= windowTop) {
+              $(this).addClass("about-img-js--animated");
+              }
+              else{
+                $(this).removeClass("about-img-js--animated");
+              }
+      })
       $(".bg-video").each(function(){
         var video = $(this).find('video');
         // console.log(video);

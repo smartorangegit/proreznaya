@@ -634,6 +634,11 @@ dd {
 }
 
 /* line 21, ../scss/style.scss */
+.yellow {
+  color: #FFB519;
+}
+
+/* line 24, ../scss/style.scss */
 a {
   color: inherit;
   text-decoration: none;
@@ -641,7 +646,7 @@ a {
   outline: none;
 }
 
-/* line 27, ../scss/style.scss */
+/* line 30, ../scss/style.scss */
 img {
   display: block;
   width: 100%;
@@ -649,17 +654,17 @@ img {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 33, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
 svg, polygon, path {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 36, ../scss/style.scss */
+/* line 39, ../scss/style.scss */
 input {
   font-family: "PoiretOne-Regular";
 }
 
-/* line 39, ../scss/style.scss */
+/* line 42, ../scss/style.scss */
 input:not(.checkbox) {
   -webkit-appearance: none;
   outline: none;
@@ -668,54 +673,54 @@ input:not(.checkbox) {
   border-radius: 0;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 sup {
   position: relative;
   font-size: 60%;
   top: -2px;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-image: none !important;
   color: black !important;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 ::-webkit-input-placeholder {
   color: inherit;
   font-family: "PoiretOne-Regular";
   letter-spacing: 0.05em;
 }
 
-/* line 57, ../scss/style.scss */
+/* line 60, ../scss/style.scss */
 ::-moz-placeholder {
   color: inherit;
   font-family: "PoiretOne-Regular";
   letter-spacing: 0.05em;
 }
 
-/* line 58, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 :-ms-input-placeholder {
   color: inherit;
   font-family: "PoiretOne-Regular";
   letter-spacing: 0.05em;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 62, ../scss/style.scss */
 :-moz-placeholder {
   color: inherit;
   font-family: "PoiretOne-Regular";
   letter-spacing: 0.05em;
 }
 
-/* line 60, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 body {
   color: #000;
   font-family: "PoiretOne-Regular";
 }
 
-/* line 64, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .scrollindicator {
   width: 100%;
   height: 7px;
@@ -729,7 +734,7 @@ body {
   cursor: pointer;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .scrollprogress {
   position: absolute;
   width: 100%;
@@ -742,7 +747,7 @@ body {
   /* animate progress bar? Remove to disable */
 }
 
-/* line 88, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .numInd {
   position: absolute;
   top: 1px;
@@ -752,7 +757,7 @@ body {
   color: #4d483e;
 }
 
-/* line 96, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 .scroll_icon {
   position: absolute;
   left: 36%;
@@ -762,12 +767,12 @@ body {
   transition: 0.6s;
   -webkit-animation: .6s;
 }
-/* line 105, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 .scroll_icon svg {
   width: 100%;
   height: auto;
 }
-/* line 109, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 .scroll_icon circle {
   r: .9;
   animation: 2s circle-r 3s infinite;
@@ -785,31 +790,31 @@ body {
     r: 0.9;
   }
 }
-/* line 120, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-/* line 123, ../scss/style.scss */
+/* line 126, ../scss/style.scss */
 ::-webkit-scrollbar-thumb {
   border-width: 1px 1px 1px 2px;
   background-color: #FFB519;
 }
 
-/* line 127, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 ::-webkit-scrollbar-track {
   background-color: #ffffff;
   border-radius: 6px;
 }
 
-/* line 131, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 .wrapper {
   max-width: 1800px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-/* line 136, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
 .flex {
   display: flex;
   display: -webkit-flex;
@@ -819,18 +824,18 @@ body {
   -webkit-justify-content: space-between;
 }
 
-/* line 144, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 section {
   padding: 80px 0;
 }
 
-/* line 147, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 .hidden__box {
   height: 0px;
   overflow: hidden;
 }
 
-/* line 151, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .main_slogan {
   margin-right: -200px;
   display: -webkit-flex;
@@ -841,7 +846,7 @@ section {
   align-items: baseline;
 }
 
-/* line 160, ../scss/style.scss */
+/* line 163, ../scss/style.scss */
 .main_name {
   font-family: "Cormorant-Light";
   font-size: 8vmax;
@@ -853,17 +858,17 @@ section {
   padding: 20px 20px 0px;
   line-height: 0.7;
 }
-/* line 171, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .main_name span {
   opacity: 0;
 }
 
-/* line 175, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 #main_name {
   visibility: hidden;
 }
 
-/* line 179, ../scss/style.scss */
+/* line 182, ../scss/style.scss */
 #main_name span {
   opacity: 0;
   -webkit-transition: opacity .36s ease-in-out;
@@ -873,19 +878,19 @@ section {
   transition: opacity .36s ease-in-out;
 }
 
-/* line 187, ../scss/style.scss */
+/* line 190, ../scss/style.scss */
 #main_name .div_opacity {
   opacity: 1;
 }
 
-/* line 190, ../scss/style.scss */
+/* line 193, ../scss/style.scss */
 #main_name--1 {
   transform: translateX(13%) translateY(100%);
   -webkit-transform: translateX(13%) translateY(100%);
   opacity: 0;
   position: relative;
 }
-/* line 195, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 #main_name--1:before {
   content: '';
   position: absolute;
@@ -915,28 +920,28 @@ section {
     opacity: 1;
   }
 }
-/* line 224, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 #main_name--1.main-animated {
   animation: 1.2s main 1.2s forwards;
 }
-/* line 226, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 #main_name--1.main-animated:before {
   width: 120px;
 }
 
-/* line 230, ../scss/style.scss */
+/* line 233, ../scss/style.scss */
 .line_scroll {
   d: path("m 20.0328 139.117 h 0 h 0");
   -webkit-transition: 1.2s ease-in 1.62s;
 }
 
-/* line 234, ../scss/style.scss */
+/* line 237, ../scss/style.scss */
 .line_scroll.animated {
   d: path("m 20.0328 139.117 h 87 h 9");
   -webkit-transition: 1.2s ease-in 1.62s;
 }
 
-/* line 239, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 .main_subname {
   font-family: "Cormorant-Light";
   font-size: 48px;
@@ -948,7 +953,7 @@ section {
   text-align: right;
 }
 
-/* line 249, ../scss/style.scss */
+/* line 252, ../scss/style.scss */
 .content_name {
   font-family: "Cormorant-Light";
   font-size: 72px;
@@ -957,7 +962,7 @@ section {
   text-indent: -2.5rem;
   position: relative;
 }
-/* line 256, ../scss/style.scss */
+/* line 259, ../scss/style.scss */
 .content_name:before {
   content: '';
   transform: none;
@@ -967,7 +972,7 @@ section {
   height: 1px;
   background-color: #4d483e;
 }
-/* line 265, ../scss/style.scss */
+/* line 268, ../scss/style.scss */
 .content_name:after {
   content: attr(data-attr);
   position: absolute;
@@ -978,14 +983,14 @@ section {
   letter-spacing: 1px;
 }
 
-/* line 277, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .content_text {
   font-family: "PoiretOne-Regular";
   font-size: 20px;
   line-height: 1.5;
 }
 
-/* line 282, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 header {
   padding: 20px 0;
   background-color: #ffffff;
@@ -1000,25 +1005,25 @@ header {
   -webkit-transition: 1s;
 }
 
-/* line 298, ../scss/style.scss */
+/* line 301, ../scss/style.scss */
 header.zipped {
   transform: translateY(-100%);
   -webkit-transform: translateY(-100%);
 }
 
-/* line 302, ../scss/style.scss */
+/* line 305, ../scss/style.scss */
 .top_logo {
   width: 180px;
   min-width: 180px;
 }
 
-/* line 306, ../scss/style.scss */
+/* line 309, ../scss/style.scss */
 nav.flex {
   align-items: flex-start;
   -webkit-align-items: flex-start;
 }
 
-/* line 310, ../scss/style.scss */
+/* line 313, ../scss/style.scss */
 nav a {
   position: relative;
   display: block;
@@ -1030,29 +1035,29 @@ nav a {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
 }
 
-/* line 320, ../scss/style.scss */
+/* line 323, ../scss/style.scss */
 .top_icon, .top_phone {
   margin-top: -20px;
 }
 
-/* line 323, ../scss/style.scss */
+/* line 326, ../scss/style.scss */
 .top_icon svg {
   fill: #FFB519;
   margin: 0 16px;
 }
 
-/* line 327, ../scss/style.scss */
+/* line 330, ../scss/style.scss */
 .top_icon .svg_phone {
   fill: none;
   stroke: #FFB519;
 }
 
-/* line 331, ../scss/style.scss */
+/* line 334, ../scss/style.scss */
 .top_phone {
   font-size: 20px;
 }
 
-/* line 334, ../scss/style.scss */
+/* line 337, ../scss/style.scss */
 .button-menu, .button-callback {
   width: 80px;
   height: 80px;
@@ -1080,24 +1085,24 @@ nav a {
   -webkit-justify-content: center;
 }
 
-/* line 361, ../scss/style.scss */
+/* line 364, ../scss/style.scss */
 .button-menu {
   text-align: left;
 }
 
-/* line 364, ../scss/style.scss */
+/* line 367, ../scss/style.scss */
 .button-callback {
   left: auto;
   right: 0;
 }
-/* line 367, ../scss/style.scss */
+/* line 370, ../scss/style.scss */
 .button-callback svg {
   stroke: #FFB519;
   transform: rotate(-45deg);
   margin-left: -5px;
 }
 
-/* line 373, ../scss/style.scss */
+/* line 376, ../scss/style.scss */
 .burger-line {
   width: 100%;
   height: 2.4px;
@@ -1105,7 +1110,7 @@ nav a {
   margin: 5px 0;
   position: relative;
 }
-/* line 379, ../scss/style.scss */
+/* line 382, ../scss/style.scss */
 .burger-line:before {
   content: '';
   position: absolute;
@@ -1113,69 +1118,69 @@ nav a {
   background: #FFB519;
 }
 
-/* line 386, ../scss/style.scss */
+/* line 389, ../scss/style.scss */
 .burger-line:nth-child(1):before {
   width: 100%;
 }
 
-/* line 389, ../scss/style.scss */
+/* line 392, ../scss/style.scss */
 .burger-line:nth-child(2):before {
   width: 50%;
 }
 
-/* line 392, ../scss/style.scss */
+/* line 395, ../scss/style.scss */
 .burger-line:nth-child(3):before {
   width: 25%;
 }
 
 /*one*/
-/* line 397, ../scss/style.scss */
+/* line 400, ../scss/style.scss */
 section.one {
   position: relative;
   padding-top: 100px;
   min-height: 100vh;
 }
 
-/* line 402, ../scss/style.scss */
+/* line 405, ../scss/style.scss */
 .one_left {
   width: 40%;
   padding-left: 10%;
   position: relative;
   z-index: 2;
 }
-/* line 407, ../scss/style.scss */
+/* line 410, ../scss/style.scss */
 .one_left .btn {
   margin: 24px 20%;
 }
 
-/* line 413, ../scss/style.scss */
+/* line 416, ../scss/style.scss */
 .main_name:nth-child(2) {
   align-self: flex-end;
   -webkit-align-self: flex-end;
 }
 
-/* line 417, ../scss/style.scss */
+/* line 420, ../scss/style.scss */
 .main_subname {
   align-self: flex-end;
   -webkit-align-self: flex-end;
 }
 
-/* line 421, ../scss/style.scss */
+/* line 424, ../scss/style.scss */
 .one_right {
   width: 60%;
 }
 
-/* line 424, ../scss/style.scss */
+/* line 427, ../scss/style.scss */
 .img-wrap {
   overflow: hidden;
   border: 0.5px solid #b3b3b3;
   position: relative;
 }
-/* line 428, ../scss/style.scss */
+/* line 431, ../scss/style.scss */
 .img-wrap img {
   position: relative;
 }
-/* line 431, ../scss/style.scss */
+/* line 434, ../scss/style.scss */
 .img-wrap:before {
   position: absolute;
   content: '';
@@ -1184,7 +1189,7 @@ section.one {
   background: #b3b3b3;
 }
 
-/* line 439, ../scss/style.scss */
+/* line 442, ../scss/style.scss */
 .img-wrap.one_img img {
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
@@ -1194,12 +1199,12 @@ section.one {
   -webkit-transition-timing-function: linear;
 }
 
-/* line 447, ../scss/style.scss */
+/* line 450, ../scss/style.scss */
 .one-text {
   padding: 0 20%;
 }
 
-/* line 450, ../scss/style.scss */
+/* line 453, ../scss/style.scss */
 .animate-tree {
   position: absolute;
   z-index: -1;
@@ -1212,14 +1217,14 @@ section.one {
   transition-delay: stroke fill 20s;
 }
 
-/* line 461, ../scss/style.scss */
+/* line 464, ../scss/style.scss */
 .tree--1 {
   left: 2%;
   width: 22%;
   bottom: 0;
 }
 
-/* line 466, ../scss/style.scss */
+/* line 469, ../scss/style.scss */
 .animate-tree.pushed {
   stroke-dasharray: 2910;
   stroke-dashoffset: 1200;
@@ -1230,7 +1235,7 @@ section.one {
 }
 
 /*two*/
-/* line 475, ../scss/style.scss */
+/* line 478, ../scss/style.scss */
 section.two {
   padding: 0 0 0px 0;
   position: relative;
@@ -1239,7 +1244,7 @@ section.two {
   overflow: hidden;
 }
 
-/* line 482, ../scss/style.scss */
+/* line 485, ../scss/style.scss */
 .two_left {
   width: 43%;
   display: flex;
@@ -1250,7 +1255,7 @@ section.two {
   -webkit-justify-content: space-between;
 }
 
-/* line 491, ../scss/style.scss */
+/* line 494, ../scss/style.scss */
 .two_right {
   width: 55%;
   padding-top: 90px;
@@ -1258,13 +1263,13 @@ section.two {
   -webkit-align-self: flex-start;
 }
 
-/* line 497, ../scss/style.scss */
+/* line 500, ../scss/style.scss */
 .two_content {
   width: 45%;
   padding: 50% 4% 4% 4%;
 }
 
-/* line 501, ../scss/style.scss */
+/* line 504, ../scss/style.scss */
 .text-prev {
   display: inline-block;
   position: relative;
@@ -1278,18 +1283,18 @@ section.two {
   letter-spacing: 1px;
 }
 
-/* line 515, ../scss/style.scss */
+/* line 518, ../scss/style.scss */
 .two-img-4 {
   margin: 40% 10% 0% 10%;
   transition-timing-function: ease-in;
 }
-/* line 518, ../scss/style.scss */
+/* line 521, ../scss/style.scss */
 .two-img-4:before {
   width: 100%;
   background-color: #b3b3b3;
   transition-duration: 0.6s;
 }
-/* line 523, ../scss/style.scss */
+/* line 526, ../scss/style.scss */
 .two-img-4 img {
   transition: transform 4.6s ease, 0.6s clip-path 0.6s ease;
   -webkit-transition: -webkit-transform 4.6s ease, 0.6s -webkit-clip-path 0.6s ease;
@@ -1298,26 +1303,26 @@ section.two {
   clip-path: inset(100% 0 0 0);
   -webkit-clip-path: inset(100% 0 0 0);
 }
-/* line 531, ../scss/style.scss */
+/* line 534, ../scss/style.scss */
 .two-img-4.img-animated img {
   transform: scale(1);
   -webkit-transform: scale(1);
   clip-path: inset(0% 0 0% 0);
   -webkit-clip-path: inset(0% 0 0% 0);
 }
-/* line 537, ../scss/style.scss */
+/* line 540, ../scss/style.scss */
 .two-img-4.img-animated:before {
   height: 100%;
 }
 
-/* line 542, ../scss/style.scss */
+/* line 545, ../scss/style.scss */
 .two-img-3 {
   width: 55%;
   align-self: flex-start;
   -webkit-align-self: flex-start;
   transition-timing-function: ease-in;
 }
-/* line 547, ../scss/style.scss */
+/* line 550, ../scss/style.scss */
 .two-img-3 img:not(.img_filtred) {
   clip-path: inset(100% 0 0 0);
   -webkit-clip-path: inset(100% 0 0 0);
@@ -1325,24 +1330,24 @@ section.two {
   transition-duration: .6s;
   z-index: 1;
 }
-/* line 554, ../scss/style.scss */
+/* line 557, ../scss/style.scss */
 .two-img-3:before {
   width: 100%;
   background-color: #b3b3b3;
   transition-duration: 0.6s;
 }
 
-/* line 562, ../scss/style.scss */
+/* line 565, ../scss/style.scss */
 .two-img-3.img-animated:before {
   height: 100%;
 }
-/* line 565, ../scss/style.scss */
+/* line 568, ../scss/style.scss */
 .two-img-3.img-animated img:not(.img_filtred) {
   clip-path: inset(0% 0 0% 0);
   -webkit-clip-path: inset(0% 0 0% 0);
 }
 
-/* line 570, ../scss/style.scss */
+/* line 573, ../scss/style.scss */
 .tree--2 {
   width: 23%;
   bottom: 0;
@@ -1350,25 +1355,25 @@ section.two {
 }
 
 /*three*/
-/* line 577, ../scss/style.scss */
+/* line 580, ../scss/style.scss */
 section.three {
   padding: 0;
   height: 100vh;
   max-height: 700px;
   position: relative;
 }
-/* line 582, ../scss/style.scss */
+/* line 585, ../scss/style.scss */
 section.three .content_name {
   color: #ffffff;
 }
-/* line 584, ../scss/style.scss */
+/* line 587, ../scss/style.scss */
 section.three .content_name:before, section.three .content_name:after {
   color: #ffffff;
   background-color: #ffffff;
   right: calc(100% + 46px);
 }
 
-/* line 591, ../scss/style.scss */
+/* line 594, ../scss/style.scss */
 .bg-video {
   overflow: hidden;
   height: 100%;
@@ -1378,20 +1383,20 @@ section.three .content_name:before, section.three .content_name:after {
   top: 0;
   transform: translateX(-50%);
 }
-/* line 599, ../scss/style.scss */
+/* line 602, ../scss/style.scss */
 .bg-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* line 605, ../scss/style.scss */
+/* line 608, ../scss/style.scss */
 .video_inner_left {
   width: 50%;
   padding: 0 10%;
 }
 
-/* line 609, ../scss/style.scss */
+/* line 612, ../scss/style.scss */
 .video_inner_block {
   position: absolute;
   width: 100%;
@@ -1400,12 +1405,12 @@ section.three .content_name:before, section.three .content_name:after {
   background: rgba(0, 0, 0, 0.36);
 }
 
-/* line 616, ../scss/style.scss */
+/* line 619, ../scss/style.scss */
 .video_inner_left {
   width: 50%;
 }
 
-/* line 619, ../scss/style.scss */
+/* line 622, ../scss/style.scss */
 .video_inner_right {
   width: 50%;
   color: #ffffff;
@@ -1424,7 +1429,7 @@ section.three .content_name:before, section.three .content_name:after {
     transform: scale(1);
   }
 }
-/* line 636, ../scss/style.scss */
+/* line 639, ../scss/style.scss */
 .big_letter {
   font-size: 15vmax;
   font-family: "Cormorant-Light";
@@ -1435,7 +1440,7 @@ section.three .content_name:before, section.three .content_name:after {
   justify-content: space-around;
   -webkit-justify-content: space-around;
 }
-/* line 645, ../scss/style.scss */
+/* line 648, ../scss/style.scss */
 .big_letter span {
   width: 50%;
   color: transparent;
@@ -1444,28 +1449,28 @@ section.three .content_name:before, section.three .content_name:after {
   transform: scale(1.6);
 }
 
-/* line 654, ../scss/style.scss */
+/* line 657, ../scss/style.scss */
 .big_letter.faded span {
   -webkit-animation: blurFadeIn 1s ease-in .2s forwards;
   -moz-animation: blurFadeIn 1s ease-in .2s forwards;
   -ms-animation: blurFadeIn 1s ease-in .2s forwards;
   animation: blurFadeIn 1s ease-in .2s forwards;
 }
-/* line 660, ../scss/style.scss */
+/* line 663, ../scss/style.scss */
 .big_letter.faded span:nth-child(2) {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -ms-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 666, ../scss/style.scss */
+/* line 669, ../scss/style.scss */
 .big_letter.faded span:nth-child(3) {
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
   -ms-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* line 672, ../scss/style.scss */
+/* line 675, ../scss/style.scss */
 .big_letter.faded span:nth-child(4) {
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
@@ -1474,53 +1479,53 @@ section.three .content_name:before, section.three .content_name:after {
 }
 
 /*four*/
-/* line 681, ../scss/style.scss */
+/* line 684, ../scss/style.scss */
 section.four {
   padding: 0px 0 0;
   position: relative;
 }
 
-/* line 685, ../scss/style.scss */
+/* line 688, ../scss/style.scss */
 .tree--3 {
   left: 0;
   top: 0;
   width: 45%;
 }
 
-/* line 690, ../scss/style.scss */
+/* line 693, ../scss/style.scss */
 .four_top {
   align-items: flex-end;
   -webkit-align-items: flex-end;
 }
 
-/* line 694, ../scss/style.scss */
+/* line 697, ../scss/style.scss */
 .four_top_1 {
   width: 45%;
   padding: 0 10% 0 14%;
 }
 
-/* line 698, ../scss/style.scss */
+/* line 701, ../scss/style.scss */
 .four_top_2 {
   width: 55%;
   padding: 5% 10%;
 }
 
-/* line 702, ../scss/style.scss */
+/* line 705, ../scss/style.scss */
 .four_bottom_1 {
   width: 45%;
   padding: 5% 10% 5% 0;
 }
 
-/* line 706, ../scss/style.scss */
+/* line 709, ../scss/style.scss */
 .four_bottom_2 {
   width: 55%;
 }
 
-/* line 710, ../scss/style.scss */
+/* line 713, ../scss/style.scss */
 .two-img-5, .two-img-6, .two-img-7 {
   transition-timing-function: ease-in;
 }
-/* line 712, ../scss/style.scss */
+/* line 715, ../scss/style.scss */
 .two-img-5 img:not(.img_filtred), .two-img-6 img:not(.img_filtred), .two-img-7 img:not(.img_filtred) {
   clip-path: inset(0% 100% 0 0);
   -webkit-clip-path: inset(0% 100% 0 0);
@@ -1528,31 +1533,31 @@ section.four {
   transition-duration: 0.6s;
   z-index: 1;
 }
-/* line 719, ../scss/style.scss */
+/* line 722, ../scss/style.scss */
 .two-img-5:before, .two-img-6:before, .two-img-7:before {
   width: 100%;
   background-color: #b3b3b3;
   transition-duration: 0.6s;
 }
-/* line 724, ../scss/style.scss */
+/* line 727, ../scss/style.scss */
 .two-img-5.img-animated, .two-img-6.img-animated, .two-img-7.img-animated {
   border-color: transparent;
 }
-/* line 726, ../scss/style.scss */
+/* line 729, ../scss/style.scss */
 .two-img-5.img-animated:before, .two-img-6.img-animated:before, .two-img-7.img-animated:before {
   height: 100%;
 }
-/* line 729, ../scss/style.scss */
+/* line 732, ../scss/style.scss */
 .two-img-5.img-animated img:not(.img_filtred), .two-img-6.img-animated img:not(.img_filtred), .two-img-7.img-animated img:not(.img_filtred) {
   clip-path: inset(0% 0 0% 0);
   -webkit-clip-path: inset(0% 0 0% 0);
 }
 
-/* line 735, ../scss/style.scss */
+/* line 738, ../scss/style.scss */
 .two-img-7 {
   transition-timing-function: ease-in;
 }
-/* line 737, ../scss/style.scss */
+/* line 740, ../scss/style.scss */
 .two-img-7 img:not(.img_filtred) {
   clip-path: inset(0% 0% 0 100%);
   -webkit-clip-path: inset(0% 0% 0 100%);
@@ -1560,7 +1565,7 @@ section.four {
   transition-duration: .6s;
   z-index: 1;
 }
-/* line 744, ../scss/style.scss */
+/* line 747, ../scss/style.scss */
 .two-img-7:before {
   width: 100%;
   top: auto;
@@ -1568,30 +1573,30 @@ section.four {
   background-color: #b3b3b3;
   transition-duration: 0.6s;
 }
-/* line 752, ../scss/style.scss */
+/* line 755, ../scss/style.scss */
 .two-img-7.img-animated:before {
   height: 100%;
 }
-/* line 755, ../scss/style.scss */
+/* line 758, ../scss/style.scss */
 .two-img-7.img-animated img:not(.img_filtred) {
   clip-path: inset(0% 0 0% 0);
   -webkit-clip-path: inset(0% 0 0% 0);
 }
 
 /*five*/
-/* line 764, ../scss/style.scss */
+/* line 767, ../scss/style.scss */
 section.five {
   padding: 0;
   height: 100vh;
   max-height: 700px;
   position: relative;
 }
-/* line 769, ../scss/style.scss */
+/* line 772, ../scss/style.scss */
 section.five .content_name {
   color: #ffffff;
 }
 
-/* line 773, ../scss/style.scss */
+/* line 776, ../scss/style.scss */
 section.contacts {
   position: relative;
   align-items: inherit;
@@ -1599,17 +1604,17 @@ section.contacts {
   overflow: hidden;
 }
 
-/* line 779, ../scss/style.scss */
+/* line 782, ../scss/style.scss */
 .contacts_left {
   width: 30%;
   padding: 0 5% 0 8%;
   color: #4d483e;
 }
-/* line 783, ../scss/style.scss */
+/* line 786, ../scss/style.scss */
 .contacts_left a.content_text {
   line-height: 2;
 }
-/* line 786, ../scss/style.scss */
+/* line 789, ../scss/style.scss */
 .contacts_left svg {
   fill: #4d483e;
   stroke: #4d483e;
@@ -1618,16 +1623,16 @@ section.contacts {
   max-height: 26px;
 }
 
-/* line 794, ../scss/style.scss */
+/* line 797, ../scss/style.scss */
 .contacts_item {
   margin-bottom: 60px;
 }
 
-/* line 797, ../scss/style.scss */
+/* line 800, ../scss/style.scss */
 .contacts_right {
   width: 70%;
 }
-/* line 799, ../scss/style.scss */
+/* line 802, ../scss/style.scss */
 .contacts_right .content_name {
   position: relative;
   z-index: 2;
@@ -1635,21 +1640,21 @@ section.contacts {
   display: inline;
   padding-left: 20px;
 }
-/* line 805, ../scss/style.scss */
+/* line 808, ../scss/style.scss */
 .contacts_right .content_name:before {
   content: none;
 }
-/* line 809, ../scss/style.scss */
+/* line 812, ../scss/style.scss */
 .contacts_right .content_name span {
   position: relative;
 }
-/* line 811, ../scss/style.scss */
+/* line 814, ../scss/style.scss */
 .contacts_right .content_name span:before {
   content: '';
   position: absolute;
 }
 
-/* line 817, ../scss/style.scss */
+/* line 820, ../scss/style.scss */
 .contacts_subname {
   font-family: "MuseoSansCyrl_900";
   font-size: 20px;
@@ -1657,12 +1662,12 @@ section.contacts {
   margin-bottom: 12px;
 }
 
-/* line 823, ../scss/style.scss */
+/* line 826, ../scss/style.scss */
 .contacts_img {
   width: 40%;
   border: none;
 }
-/* line 826, ../scss/style.scss */
+/* line 829, ../scss/style.scss */
 .contacts_img img {
   transition-duration: 4s;
   -webkit-transition-duration: 4s;
@@ -1671,46 +1676,46 @@ section.contacts {
   transform-origin: right;
   -webkit-transform-origin: right;
 }
-/* line 834, ../scss/style.scss */
+/* line 837, ../scss/style.scss */
 .contacts_img.img-animated img {
   transform: scale(1);
   -webkit-transform: scale(1);
 }
 
-/* line 839, ../scss/style.scss */
+/* line 842, ../scss/style.scss */
 .contacts_form {
   width: 60%;
 }
 
-/* line 842, ../scss/style.scss */
+/* line 845, ../scss/style.scss */
 .tree--4 {
   width: 26%;
   left: 0;
   bottom: 0;
 }
 
-/* line 847, ../scss/style.scss */
+/* line 850, ../scss/style.scss */
 .tree--5 {
   width: 45%;
   right: 0;
   top: -60px;
 }
 
-/* line 852, ../scss/style.scss */
+/* line 855, ../scss/style.scss */
 .main_form {
   width: 100%;
   max-width: 360px;
   margin: 10px auto;
   padding: 10px 20px;
 }
-/* line 857, ../scss/style.scss */
+/* line 860, ../scss/style.scss */
 .main_form input {
   display: block;
   height: 60px;
   width: 100%;
   border-bottom: 1px solid #b3b3b3;
 }
-/* line 863, ../scss/style.scss */
+/* line 866, ../scss/style.scss */
 .main_form textarea {
   display: block;
   height: 120px;
@@ -1722,20 +1727,20 @@ section.contacts {
   margin-top: 20px;
   resize: none;
 }
-/* line 874, ../scss/style.scss */
+/* line 877, ../scss/style.scss */
 .main_form button {
   background: transparent;
   max-width: 100%;
   margin-bottom: 0;
 }
 
-/* line 881, ../scss/style.scss */
+/* line 884, ../scss/style.scss */
 .footer_menu {
   letter-spacing: 1px;
   padding: 40px 0;
   overflow: hidden;
 }
-/* line 885, ../scss/style.scss */
+/* line 888, ../scss/style.scss */
 .footer_menu .wrapper {
   max-width: 1200px;
   width: 100%;
@@ -1743,7 +1748,7 @@ section.contacts {
   -webkit-align-items: inherit;
 }
 
-/* line 892, ../scss/style.scss */
+/* line 895, ../scss/style.scss */
 .footer__item {
   display: flex;
   flex-direction: column;
@@ -1758,86 +1763,86 @@ section.contacts {
   -webkit-transition-duration: .8s;
 }
 
-/* line 905, ../scss/style.scss */
+/* line 908, ../scss/style.scss */
 .footer__item:nth-child(1) {
   transition-delay: 0.2s;
 }
 
-/* line 908, ../scss/style.scss */
+/* line 911, ../scss/style.scss */
 .footer__item:nth-child(2) {
   transition-delay: 0.3s;
 }
 
-/* line 911, ../scss/style.scss */
+/* line 914, ../scss/style.scss */
 .footer__item:nth-child(3) {
   transition-delay: 0.4s;
 }
 
-/* line 914, ../scss/style.scss */
+/* line 917, ../scss/style.scss */
 .footer__item:nth-child(4) {
   transition-delay: 0.5s;
 }
 
-/* line 918, ../scss/style.scss */
+/* line 921, ../scss/style.scss */
 .footer_menu.animated .footer__item {
   transform: translateY(0%);
   -webkit-transform: translateY(0%);
   opacity: 1;
 }
 
-/* line 925, ../scss/style.scss */
+/* line 928, ../scss/style.scss */
 .footer_column dt {
   font-family: "MuseoSansCyrl_900";
   font-size: 12px;
   text-transform: uppercase;
   margin: 24px 0;
 }
-/* line 931, ../scss/style.scss */
+/* line 934, ../scss/style.scss */
 .footer_column dd {
   font-size: 20px;
   line-height: 1.8;
 }
 
-/* line 936, ../scss/style.scss */
+/* line 939, ../scss/style.scss */
 .social_links {
   padding-top: 30px;
   justify-content: flex-start;
   -webkit-justify-content: flex-start;
 }
-/* line 940, ../scss/style.scss */
+/* line 943, ../scss/style.scss */
 .social_links a {
   display: block;
   margin-right: 10px;
 }
 
-/* line 945, ../scss/style.scss */
+/* line 948, ../scss/style.scss */
 footer {
   padding: 30px 0;
 }
 
-/* line 948, ../scss/style.scss */
+/* line 951, ../scss/style.scss */
 .footer_right {
   width: 76px;
 }
 
 @media only screen and (max-width: 1480px) {
-  /* line 956, ../scss/style.scss */
+  /* line 959, ../scss/style.scss */
   nav a {
     font-size: 18px;
   }
 
-  /* line 959, ../scss/style.scss */
+  /* line 962, ../scss/style.scss */
   .cl-effect-9 a {
     margin: 0 12px;
     padding: 8px 10px;
   }
 
-  /* line 963, ../scss/style.scss */
+  /* line 966, ../scss/style.scss */
   .top_phone {
     font-size: 18px;
   }
 
-  /* line 966, ../scss/style.scss */
+  /* line 969, ../scss/style.scss */
   .button-menu, .button-callback {
     width: 70px;
     height: 70px;
@@ -1845,7 +1850,7 @@ footer {
     font-size: 10px;
   }
 
-  /* line 972, ../scss/style.scss */
+  /* line 975, ../scss/style.scss */
   .top_icon svg {
     fill: #FFB519;
     margin: 0 8px;
