@@ -102,7 +102,6 @@
             Технологии строительства
         </div>
         <div class="about-techologies__box flex">
-
             <div class="about-techologies__item">
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-1.jpg" alt="Технологии На Прорезной">
@@ -151,7 +150,7 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-5.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Внутренняя отделка</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
@@ -162,7 +161,7 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-6.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Энергосистемы</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
@@ -173,7 +172,7 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-7.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Вода и канализация</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
@@ -184,7 +183,7 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-8.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Закрытая территори</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
@@ -195,7 +194,7 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-9.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Квартиры</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
@@ -206,7 +205,7 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-10.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Зоны отдыха</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
@@ -217,7 +216,7 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-11.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Квартиры с террасами</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
@@ -228,12 +227,35 @@
                 <figure class="about-techologies__inner">
                     <img src="/img/about/tech-12.jpg" alt="Технологии На Прорезной">
                     <figcaption>
-                        <h4>Внешние стены</h4>
+                        <h4>Лифт</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                         </p>
                     </figcaption>
                 </figure>
+            </div>
+        </div>
+    </section>
+    <section class="about-developer">
+        <div class="wrapper flex">
+            <div class="about-developer__descr">
+                <div class="about__descr">
+                    <h3 class="text-prev">developer</h3>
+                    <div class="content_name wow fadeIn" data-attr="04">
+                        Застройщик
+                    </div>
+                    <div class="content_text wow fadeIn">
+                        Comfort Life Development – динамично развивающаяся компания. Наши специалисты имеют многолетний опыт успешной реализации объектов различной сложности. С 2005 года наша команда прошла путь от строительства отдельных частных коттеджей до проектирования и реализации  современных жилых комплексов европейского уровня.
+                    </div>
+                </div>
+                <a class='btn wow fadeIn' href='/gallery.php'>
+                    Перейти к галерее
+                    <span class='line-1'></span><span class='line-2'></span><span class='line-3'></span><span class='line-4'></span>
+                </a>
+
+            </div>
+            <div class="about-developer__img about-img-js">
+                <img src="/img/about/ab-7.jpg" alt="Застройщик 'На Прорезной'">
             </div>
 
         </div>

@@ -1408,91 +1408,376 @@ button.mfp-close:active {
   padding: 10px;
   position: absolute;
   bottom: 0;
+  cursor: pointer;
 }
-/* line 217, ../scss/pages/_about.scss */
+/* line 218, ../scss/pages/_about.scss */
 .about-park__slider .controls-right {
   left: 0;
 }
-/* line 220, ../scss/pages/_about.scss */
+/* line 221, ../scss/pages/_about.scss */
 .about-park__slider .controls-left {
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   right: 100%;
 }
-/* line 226, ../scss/pages/_about.scss */
+/* line 227, ../scss/pages/_about.scss */
 .about-park__slider-item {
   height: 560px;
 }
-/* line 228, ../scss/pages/_about.scss */
+/* line 229, ../scss/pages/_about.scss */
 .about-park__slider-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 234, ../scss/pages/_about.scss */
+/* line 235, ../scss/pages/_about.scss */
 .about-park__descr {
   width: 42%;
   padding-left: 140px;
 }
 
-/* line 239, ../scss/pages/_about.scss */
+/* line 240, ../scss/pages/_about.scss */
 .about-techologies {
   padding: 30px 0;
 }
-/* line 241, ../scss/pages/_about.scss */
+/* line 242, ../scss/pages/_about.scss */
 .about-techologies .content_name {
   text-indent: 0;
   text-align: center;
 }
-/* line 245, ../scss/pages/_about.scss */
+/* line 246, ../scss/pages/_about.scss */
 .about-techologies__box {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
 }
-/* line 249, ../scss/pages/_about.scss */
+/* line 250, ../scss/pages/_about.scss */
 .about-techologies__item {
   width: 25%;
   height: 250px;
   padding: 4px;
 }
-/* line 254, ../scss/pages/_about.scss */
+/* line 255, ../scss/pages/_about.scss */
 .about-techologies__inner {
   width: 100%;
   height: 100%;
   position: relative;
   cursor: pointer;
 }
-/* line 259, ../scss/pages/_about.scss */
+/* line 260, ../scss/pages/_about.scss */
 .about-techologies__inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 264, ../scss/pages/_about.scss */
+/* line 265, ../scss/pages/_about.scss */
 .about-techologies__inner figcaption {
   position: absolute;
   top: 50%;
   right: 0;
   width: 60%;
-  min-height: 120px;
+  min-height: 100px;
   background-color: rgba(255, 255, 255, 0.9);
   transform: translateY(-50%);
-  transition-duration: .46s;
+  transition-duration: .36s;
+  -webkit-transform: translateY(-50%);
+  -webkit-transition-duration: .36s;
 }
-/* line 273, ../scss/pages/_about.scss */
+/* line 276, ../scss/pages/_about.scss */
 .about-techologies__inner figcaption h4 {
   padding: 20px 30px;
   font-size: 20px;
+  position: relative;
 }
-/* line 277, ../scss/pages/_about.scss */
+/* line 280, ../scss/pages/_about.scss */
+.about-techologies__inner figcaption h4:after {
+  content: '';
+  width: 60%;
+  height: 1px;
+  background-color: #b3b3b3;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+/* line 297, ../scss/pages/_about.scss */
 .about-techologies__inner figcaption p {
-  height: 0;
+  padding: 20px;
+  max-height: 0;
   overflow: hidden;
+  line-height: 1.6;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  opacity: 0;
 }
-/* line 283, ../scss/pages/_about.scss */
+/* line 308, ../scss/pages/_about.scss */
 .about-techologies__inner:hover figcaption {
   top: 0;
   width: 100%;
   transform: translateY(0%);
   min-height: 100%;
+}
+/* line 314, ../scss/pages/_about.scss */
+.about-techologies__inner:hover h4:after {
+  opacity: 1;
+}
+/* line 317, ../scss/pages/_about.scss */
+.about-techologies__inner:hover p {
+  max-height: 100%;
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transition-duration: 0.42s;
+  -webkit-transition-duration: 0.42s;
+  opacity: 1;
+  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+}
+
+/* line 332, ../scss/pages/_about.scss */
+.about-developer .wrapper {
+  max-width: 1200px;
+}
+/* line 336, ../scss/pages/_about.scss */
+.about-developer__descr {
+  padding-left: 13%;
+  align-self: flex-end;
+  -webkit-align-self: flex-end;
+}
+/* line 340, ../scss/pages/_about.scss */
+.about-developer__descr .btn {
+  margin-bottom: 0;
+}
+/* line 344, ../scss/pages/_about.scss */
+.about-developer__img {
+  max-width: 480px;
+}
+/* line 346, ../scss/pages/_about.scss */
+.about-developer__img:before {
+  width: 100%;
+}
+
+/* line 1, ../scss/pages/_genplan.scss */
+.genplan-page {
+  padding: 50px 0 0;
+  position: relative;
+}
+/* line 4, ../scss/pages/_genplan.scss */
+.genplan-page:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 250px;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.56);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.07) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.56)), color-stop(100%, rgba(0, 0, 0, 0.07)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.07) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.07) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.07) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.07) 100%);
+}
+/* line 20, ../scss/pages/_genplan.scss */
+.genplan-page .header-pages {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  padding-top: 70px;
+  z-index: 1;
+}
+/* line 26, ../scss/pages/_genplan.scss */
+.genplan-page .header-pages .breadcrumbs {
+  text-shadow: 0 0 10px #000;
+}
+/* line 29, ../scss/pages/_genplan.scss */
+.genplan-page .header-pages .content_name {
+  color: #ffffff;
+  padding-bottom: 16px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #000;
+}
+/* line 34, ../scss/pages/_genplan.scss */
+.genplan-page .header-pages .content_name:before, .genplan-page .header-pages .content_name:after {
+  background-color: #ffffff;
+}
+
+/* line 40, ../scss/pages/_genplan.scss */
+.svg-genplan {
+  width: 100%;
+  height: auto;
+  font-family: "PoiretOne-Regular";
+  font-size: 20px;
+}
+
+/* line 1, ../scss/pages/_developer.scss */
+.developer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+/* line 6, ../scss/pages/_developer.scss */
+.developer-grid__item-1 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
+  padding-right: 40%;
+}
+/* line 13, ../scss/pages/_developer.scss */
+.developer-grid__item-2 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 4;
+  padding-left: 40%;
+}
+/* line 20, ../scss/pages/_developer.scss */
+.developer-grid__item-3 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 4;
+  padding-top: 4%;
+  clip-path: inset(0 100% 0 0);
+  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  transition-duration: 0.86s;
+  -webkit-transition-duration: 0.86s;
+}
+/* line 31, ../scss/pages/_developer.scss */
+.developer-grid__item-3.activegrid {
+  clip-path: inset(0 0 0% 0);
+}
+/* line 35, ../scss/pages/_developer.scss */
+.developer-grid__item-4 {
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-row-end: 4;
+  grid-column-end: 6;
+  padding-top: 30%;
+  clip-path: inset(0% 0 0% 100%);
+  transition-delay: 1.86s;
+  -webkit-transition-delay: 1.86s;
+  transition-duration: 0.86s;
+  -webkit-transition-duration: 0.86s;
+}
+/* line 46, ../scss/pages/_developer.scss */
+.developer-grid__item-4.activegrid {
+  clip-path: inset(0 0 0% 0);
+}
+
+/* line 51, ../scss/pages/_developer.scss */
+.developer-page {
+  position: relative;
+}
+/* line 53, ../scss/pages/_developer.scss */
+.developer-page .content_name.with-bloquotes {
+  margin: 0 70px 0 auto;
+}
+/* line 56, ../scss/pages/_developer.scss */
+.developer-page__progress-item {
+  padding: 20px 0 20px 160px;
+  display: table;
+}
+/* line 59, ../scss/pages/_developer.scss */
+.developer-page__progress-item .content_name {
+  font-family: inherit;
+  font-size: 20px;
+  text-indent: 0;
+  max-width: 240px;
+}
+/* line 65, ../scss/pages/_developer.scss */
+.developer-page__progress-item .strong {
+  font-family: "Cormorant-Light";
+  font-size: 48px;
+}
+/* line 69, ../scss/pages/_developer.scss */
+.developer-page__progress-item:nth-child(1) {
+  margin: 0;
+}
+/* line 72, ../scss/pages/_developer.scss */
+.developer-page__progress-item:nth-child(2) {
+  margin: 0 auto;
+}
+/* line 75, ../scss/pages/_developer.scss */
+.developer-page__progress-item:nth-child(3) {
+  margin: 0 0 0 auto;
+}
+/* line 78, ../scss/pages/_developer.scss */
+.developer-page__progress-item:nth-child(4) {
+  max-width: 480px;
+  margin-top: -100px;
+}
+
+/* line 84, ../scss/pages/_developer.scss */
+.developer__tree-1 {
+  position: absolute;
+  pointer-events: none;
+  width: 30%;
+  top: 100px;
+  right: 0;
+  z-index: -1;
+}
+
+/* line 92, ../scss/pages/_developer.scss */
+.developer__tree-2 {
+  position: absolute;
+  pointer-events: none;
+  width: 25%;
+  bottom: 10px;
+  left: 0;
+  z-index: -1;
+}
+
+/* line 2, ../scss/pages/_appartaments.scss */
+.appartaments-page__link {
+  width: 24.5%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "MuseoSansCyrl_300";
+  text-transform: uppercase;
+  border: 1px solid #f0f0f0;
+  transition: 0.24s;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 24px;
+}
+/* line 13, ../scss/pages/_appartaments.scss */
+.appartaments-page__link:before {
+  content: '';
+  position: absolute;
+  border: 8px solid #fff;
+  outline: 1px solid #b3b3b3;
+  box-shadow: 0 0 6px #fff;
+  z-index: -1;
+  top: calc(100% - 8px);
+  transform: rotate(45deg);
+  transition: 0.24s;
+  opacity: 0;
+}
+/* line 25, ../scss/pages/_appartaments.scss */
+.appartaments-page__link a {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  display: block;
+  opacity: 0.6;
+}
+/* line 31, ../scss/pages/_appartaments.scss */
+.appartaments-page__link.current {
+  border: 1px solid #b3b3b3;
+}
+/* line 33, ../scss/pages/_appartaments.scss */
+.appartaments-page__link.current:before {
+  opacity: 1;
+}
+/* line 36, ../scss/pages/_appartaments.scss */
+.appartaments-page__link.current a {
+  opacity: 1;
 }

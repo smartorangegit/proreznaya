@@ -56,11 +56,11 @@
                 <img src="/img/svg/NP_logo_ru.svg" alt="ЖК 'На Прорезной'">
             </a>
             <nav class="cl-effect-9 flex">
-                <a href="#"><span>Про комплекс</span><span>About</span></a>
-                <a href="#"><span>Прогулка</span><span>Тур по комплексу</span></a>
-                <a href="#"><span>Преимущества</span><span>Advantages</span></a>
-                <a href="#"><span>Квартиры</span><span>Appartment</span></a>
-                <a href="#"><span>Контакты</span><span>Contacts</span></a>
+                <a href="/about.php"><span>Про комплекс</span><span>About</span></a>
+                <a href="/tour.php"><span>Прогулка</span><span>Тур по комплексу</span></a>
+                <a href="/advantages.php"><span>Преимущества</span><span>Advantages</span></a>
+                <a href="/appartaments.php"><span>Квартиры</span><span>Appartment</span></a>
+                <a href="/contacts.php"><span>Контакты</span><span>Contacts</span></a>
             </nav>
             <div class="top_icon flex">
                 <a href="#">

@@ -32,9 +32,9 @@
                 <dd><a href="/developers.php">Застройщик</a></dd>
                 <dd><a href="/hod-stroitelstva.php">Ход строительства</a></dd>
                 <dd><a href="/news.php">Новости</a></dd>
-                <dd><a href="/webcam.php">Вебкамера</a></dd>
+                <dd><a href="/video.php">Видео</a></dd>
                 <dd><a href="/document.php">Документы</a></dd>
-                <dd><a href="/terms-of-sale.php">Генплан</a></dd>
+                <dd><a href="/genplan.php">Генплан</a></dd>
             </dl>
         </div>
         <div class="footer__item">
@@ -110,9 +110,9 @@
                         <dd><a href="/developers.php">Застройщик</a></dd>
                         <dd><a href="/hod-stroitelstva.php">Ход строительства</a></dd>
                         <dd><a href="/news.php">Новости</a></dd>
-                        <dd><a href="/webcam.php">Вебкамера</a></dd>
+                        <dd><a href="/video.php">Видео</a></dd>
                         <dd><a href="/document.php">Документы</a></dd>
-                        <dd><a href="/terms-of-sale.php">Генплан</a></dd>
+                        <dd><a href="/genplan.php">Генплан</a></dd>
                     </dl>
                 </div>
                 <div class="footer__item">
@@ -140,7 +140,7 @@
             </div>
         </section>
     </div> <!-- .modal-content -->
-    
+
     <div class="modal-close">
         <svg class="close_svg" enable-background="new 0 0 50 50" viewBox="0 0 50 50" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m37.304 11.282 1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ffffff"></path><path d="m12.696 11.282 26.022 26.02-1.414 1.415-26.022-26.02z" fill="#ffffff"></path></svg>
     </div>
