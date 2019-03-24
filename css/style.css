@@ -82,8 +82,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url('/fonts/MuseoSansCyrl_900.otf?1403527152') format('opentype');
 }
 @font-face {
+  font-family: "MuseoSansCyrl_500";
+  src: url('/fonts/MuseoSansCyrl_500.otf?1403185418') format('opentype');
+}
+@font-face {
   font-family: "MuseoSansCyrl_300";
   src: url('/fonts/MuseoSansCyrl_300.otf?1403211440') format('opentype');
+}
+@font-face {
+  font-family: "MuseoSansCyrl_100";
+  src: url('/fonts/MuseoSansCyrl.otf?1403185346') format('opentype');
 }
 @font-face {
   font-family: "PoiretOne-Regular";
@@ -107,8 +115,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.3s;
   text-align: center;
   margin: 24px auto;
+  cursor: pointer;
 }
-/* line 17, ../scss/_button.scss */
+/* line 18, ../scss/_button.scss */
 .btn .line-1, .btn .line-2, .btn .line-3, .btn .line-4 {
   content: "";
   display: block;
@@ -116,32 +125,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 3px;
   background-color: #FFB519;
 }
-/* line 24, ../scss/_button.scss */
+/* line 25, ../scss/_button.scss */
 .btn .line-2, .btn .line-4 {
   width: 0;
   height: 3px;
 }
-/* line 28, ../scss/_button.scss */
+/* line 29, ../scss/_button.scss */
 .btn .line-1 {
   left: 0;
   bottom: 0;
 }
-/* line 32, ../scss/_button.scss */
+/* line 33, ../scss/_button.scss */
 .btn .line-2 {
   left: 0;
   top: 0;
 }
-/* line 36, ../scss/_button.scss */
+/* line 37, ../scss/_button.scss */
 .btn .line-3 {
   right: 0;
   top: 0;
 }
-/* line 40, ../scss/_button.scss */
+/* line 41, ../scss/_button.scss */
 .btn .line-4 {
   right: 0;
   bottom: 0;
 }
-/* line 44, ../scss/_button.scss */
+/* line 45, ../scss/_button.scss */
 .btn--radius {
   border-radius: 30px;
   font-family: inherit;
@@ -152,55 +161,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 0.2px;
   width: auto;
 }
-/* line 53, ../scss/_button.scss */
+/* line 54, ../scss/_button.scss */
 .btn--radius:hover {
   border-color: rgba(255, 181, 25, 0);
   background-color: #FFB519;
 }
-/* line 58, ../scss/_button.scss */
+/* line 59, ../scss/_button.scss */
 .btn--radius-yellow {
   background-color: #FFB519;
 }
-/* line 60, ../scss/_button.scss */
+/* line 61, ../scss/_button.scss */
 .btn--radius-yellow:hover {
   background-color: #ffffff;
   border-color: rgba(255, 181, 25, 0);
 }
 
-/* line 67, ../scss/_button.scss */
+/* line 68, ../scss/_button.scss */
 .btn-white {
   border-color: #ffffff;
   color: #ffffff;
 }
-/* line 70, ../scss/_button.scss */
+/* line 71, ../scss/_button.scss */
 .btn-white .line-1, .btn-white .line-2, .btn-white .line-3, .btn-white .line-4 {
   background-color: #ffffff;
 }
 
-/* line 74, ../scss/_button.scss */
+/* line 75, ../scss/_button.scss */
 .btn:hover {
   border-color: rgba(255, 181, 25, 0);
 }
 
-/* line 78, ../scss/_button.scss */
+/* line 79, ../scss/_button.scss */
 .btn:hover .line-1 {
   -webkit-animation: move1 1500ms infinite ease;
   animation: move1 1500ms infinite ease;
 }
 
-/* line 82, ../scss/_button.scss */
+/* line 83, ../scss/_button.scss */
 .btn:hover .line-2 {
   -webkit-animation: move2 1500ms infinite ease;
   animation: move2 1500ms infinite ease;
 }
 
-/* line 86, ../scss/_button.scss */
+/* line 87, ../scss/_button.scss */
 .btn:hover .line-3 {
   -webkit-animation: move3 1500ms infinite ease;
   animation: move3 1500ms infinite ease;
 }
 
-/* line 90, ../scss/_button.scss */
+/* line 91, ../scss/_button.scss */
 .btn:hover .line-4 {
   -webkit-animation: move4 1500ms infinite ease;
   animation: move4 1500ms infinite ease;
@@ -335,20 +344,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 /* Effect second text and borders */
-/* line 142, ../scss/_button.scss */
+/* line 143, ../scss/_button.scss */
 nav a:hover,
 nav a:focus {
   outline: none;
 }
 
-/* line 146, ../scss/_button.scss */
+/* line 147, ../scss/_button.scss */
 .cl-effect-9 a {
   margin: 0 20px;
   padding: 10px 18px;
   white-space: nowrap;
 }
 
-/* line 151, ../scss/_button.scss */
+/* line 152, ../scss/_button.scss */
 .cl-effect-9 a::before,
 .cl-effect-9 a::after {
   position: absolute;
@@ -364,7 +373,7 @@ nav a:focus {
   transition: opacity 0.3s, height 0.3s;
 }
 
-/* line 165, ../scss/_button.scss */
+/* line 166, ../scss/_button.scss */
 .cl-effect-9 a::after {
   top: 100%;
   opacity: 0;
@@ -376,14 +385,14 @@ nav a:focus {
   transform: translateY(-10px);
 }
 
-/* line 176, ../scss/_button.scss */
+/* line 177, ../scss/_button.scss */
 .cl-effect-9 a span:first-child {
   z-index: 2;
   display: block;
   text-align: center;
 }
 
-/* line 182, ../scss/_button.scss */
+/* line 183, ../scss/_button.scss */
 .cl-effect-9 a span:last-child {
   z-index: 1;
   display: block;
@@ -404,13 +413,13 @@ nav a:focus {
   transform: translateY(-100%);
 }
 
-/* line 201, ../scss/_button.scss */
+/* line 202, ../scss/_button.scss */
 .cl-effect-9 a:hover::before,
 .cl-effect-9 a:focus::before {
   height: 6px;
 }
 
-/* line 205, ../scss/_button.scss */
+/* line 206, ../scss/_button.scss */
 .cl-effect-9 a:hover::before,
 .cl-effect-9 a:hover::after,
 .cl-effect-9 a:focus::before,
@@ -421,7 +430,7 @@ nav a:focus {
   transform: translateY(0px);
 }
 
-/* line 214, ../scss/_button.scss */
+/* line 215, ../scss/_button.scss */
 .cl-effect-9 a:hover span:last-child,
 .cl-effect-9 a:focus span:last-child {
   opacity: 1;
@@ -431,7 +440,7 @@ nav a:focus {
 }
 
 /*button at footer*/
-/* line 223, ../scss/_button.scss */
+/* line 224, ../scss/_button.scss */
 .spot {
   position: absolute;
   width: 100%;
@@ -440,7 +449,7 @@ nav a:focus {
   left: 0;
 }
 
-/* line 230, ../scss/_button.scss */
+/* line 231, ../scss/_button.scss */
 .svg-wrapper {
   margin-top: 0;
   position: relative;
@@ -452,7 +461,7 @@ nav a:focus {
   margin-right: 5px;
 }
 
-/* line 240, ../scss/_button.scss */
+/* line 241, ../scss/_button.scss */
 #shape {
   stroke-width: 3px;
   fill: transparent;
@@ -462,20 +471,20 @@ nav a:focus {
   transition: 1s all ease;
 }
 
-/* line 248, ../scss/_button.scss */
+/* line 249, ../scss/_button.scss */
 #text {
   margin-top: -32px;
   text-align: center;
 }
 
-/* line 253, ../scss/_button.scss */
+/* line 254, ../scss/_button.scss */
 #text a {
   text-decoration: none;
   font-weight: 100;
   font-size: 1.1em;
 }
 
-/* line 259, ../scss/_button.scss */
+/* line 260, ../scss/_button.scss */
 .svg-wrapper:hover #shape {
   stroke-dasharray: 50 0;
   stroke-width: 3px;
@@ -483,12 +492,12 @@ nav a:focus {
   stroke: #FFB519;
 }
 
-/* line 267, ../scss/_button.scss */
+/* line 268, ../scss/_button.scss */
 dd {
   overflow: hidden;
 }
 
-/* line 270, ../scss/_button.scss */
+/* line 271, ../scss/_button.scss */
 .aspan {
   display: inline-block;
   min-width: 8px;
@@ -516,97 +525,97 @@ dd {
     color: inherit;
   }
 }
-/* line 300, ../scss/_button.scss */
+/* line 301, ../scss/_button.scss */
 .aspan:nth-of-type(2) {
   animation-delay: .02s;
 }
 
-/* line 303, ../scss/_button.scss */
+/* line 304, ../scss/_button.scss */
 .aspan:nth-of-type(3) {
   animation-delay: .04s;
 }
 
-/* line 306, ../scss/_button.scss */
+/* line 307, ../scss/_button.scss */
 .aspan:nth-of-type(4) {
   animation-delay: .06s;
 }
 
-/* line 309, ../scss/_button.scss */
+/* line 310, ../scss/_button.scss */
 .aspan:nth-of-type(5) {
   animation-delay: .08s;
 }
 
-/* line 312, ../scss/_button.scss */
+/* line 313, ../scss/_button.scss */
 .aspan:nth-of-type(6) {
   animation-delay: .10s;
 }
 
-/* line 315, ../scss/_button.scss */
+/* line 316, ../scss/_button.scss */
 .aspan:nth-of-type(7) {
   animation-delay: .12s;
 }
 
-/* line 318, ../scss/_button.scss */
+/* line 319, ../scss/_button.scss */
 .aspan:nth-of-type(8) {
   animation-delay: .14s;
 }
 
-/* line 321, ../scss/_button.scss */
+/* line 322, ../scss/_button.scss */
 .aspan:nth-of-type(9) {
   animation-delay: .16s;
 }
 
-/* line 324, ../scss/_button.scss */
+/* line 325, ../scss/_button.scss */
 .aspan:nth-of-type(10) {
   animation-delay: .18s;
 }
 
-/* line 327, ../scss/_button.scss */
+/* line 328, ../scss/_button.scss */
 .aspan:nth-of-type(11) {
   animation-delay: .20s;
 }
 
-/* line 330, ../scss/_button.scss */
+/* line 331, ../scss/_button.scss */
 .aspan:nth-of-type(12) {
   animation-delay: .22s;
 }
 
-/* line 333, ../scss/_button.scss */
+/* line 334, ../scss/_button.scss */
 .aspan:nth-of-type(13) {
   animation-delay: .24s;
 }
 
-/* line 336, ../scss/_button.scss */
+/* line 337, ../scss/_button.scss */
 .aspan:nth-of-type(14) {
   animation-delay: .26s;
 }
 
-/* line 339, ../scss/_button.scss */
+/* line 340, ../scss/_button.scss */
 .aspan:nth-of-type(15) {
   animation-delay: .28s;
 }
 
-/* line 342, ../scss/_button.scss */
+/* line 343, ../scss/_button.scss */
 .aspan:nth-of-type(16) {
   animation-delay: .30s;
 }
 
-/* line 345, ../scss/_button.scss */
+/* line 346, ../scss/_button.scss */
 .aspan:nth-of-type(17) {
   animation-delay: .32s;
 }
 
-/* line 348, ../scss/_button.scss */
+/* line 349, ../scss/_button.scss */
 .aspan:nth-of-type(18) {
   animation-delay: .34s;
 }
 
-/* line 351, ../scss/_button.scss */
+/* line 352, ../scss/_button.scss */
 .aspan:nth-of-type(19) {
   animation-delay: .36s;
 }
 
-/* line 354, ../scss/_button.scss */
+/* line 355, ../scss/_button.scss */
 .aspan:nth-of-type(20) {
   animation-delay: .38s;
 }

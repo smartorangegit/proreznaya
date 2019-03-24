@@ -5,9 +5,10 @@
 @include font-face("Cormorant-Light", font-files("Cormorant-Light.ttf"));
 @include font-face("Cormorant-SemiBoldItalic", font-files("Cormorant-SemiBoldItalic.ttf"));
 @include font-face("MuseoSansCyrl_900", font-files("MuseoSansCyrl_900.otf"));
+@include font-face("MuseoSansCyrl_500", font-files("MuseoSansCyrl_500.otf"));
 @include font-face("MuseoSansCyrl_300", font-files("MuseoSansCyrl_300.otf"));
+@include font-face("MuseoSansCyrl_100", font-files("MuseoSansCyrl.otf"));
 @include font-face("PoiretOne-Regular", font-files("PoiretOne-Regular.ttf"));
-
 
 
 $cormorant : 	"Cormorant-Regular";
@@ -15,6 +16,8 @@ $cormo-L : 		"Cormorant-Light";
 $cormo-SBI : 	"Cormorant-SemiBoldItalic";
 $museo : 		"MuseoSansCyrl_900";
 $museoL :		"MuseoSansCyrl_300";
+$museo500 :		"MuseoSansCyrl_500";
+$museo100 :		"MuseoSansCyrl_100";
 $poiret : 		"PoiretOne-Regular";
 
 $yellow :		 #FFB519; /* rgba(255,181,25,.0)*/

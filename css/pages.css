@@ -81,8 +81,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url('/fonts/MuseoSansCyrl_900.otf?1403527152') format('opentype');
 }
 @font-face {
+  font-family: "MuseoSansCyrl_500";
+  src: url('/fonts/MuseoSansCyrl_500.otf?1403185418') format('opentype');
+}
+@font-face {
   font-family: "MuseoSansCyrl_300";
   src: url('/fonts/MuseoSansCyrl_300.otf?1403211440') format('opentype');
+}
+@font-face {
+  font-family: "MuseoSansCyrl_100";
+  src: url('/fonts/MuseoSansCyrl.otf?1403185346') format('opentype');
 }
 @font-face {
   font-family: "PoiretOne-Regular";
@@ -1779,5 +1787,237 @@ button.mfp-close:active {
 }
 /* line 36, ../scss/pages/_appartaments.scss */
 .appartaments-page__link.current a {
+  opacity: 1;
+}
+/* line 41, ../scss/pages/_appartaments.scss */
+.appartaments-page__slider {
+  padding: 0 80px;
+}
+/* line 43, ../scss/pages/_appartaments.scss */
+.appartaments-page__slider .slick-arrow {
+  stroke: #FFB519;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+/* line 50, ../scss/pages/_appartaments.scss */
+.appartaments-page__slider .controls-right {
+  right: 0;
+}
+/* line 53, ../scss/pages/_appartaments.scss */
+.appartaments-page__slider .controls-left {
+  left: 0;
+  transform: scaleX(-1);
+}
+/* line 58, ../scss/pages/_appartaments.scss */
+.appartaments-page__item {
+  padding: 0 10px;
+}
+/* line 60, ../scss/pages/_appartaments.scss */
+.appartaments-page__item-img {
+  width: 100%;
+  height: 260px;
+}
+/* line 63, ../scss/pages/_appartaments.scss */
+.appartaments-page__item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* line 70, ../scss/pages/_appartaments.scss */
+.appartaments-page__item-table {
+  width: 100%;
+  margin-bottom: 12px;
+}
+/* line 73, ../scss/pages/_appartaments.scss */
+.appartaments-page__item-table td {
+  text-align: left;
+  padding: 6px 0;
+  width: 50%;
+}
+/* line 79, ../scss/pages/_appartaments.scss */
+.appartaments-page__item-show {
+  width: 100%;
+  padding: 10px 4px;
+  background-color: #FFB519;
+  transition-duration: .26s;
+  -webkit-transition-duration: .26s;
+  font-family: "MuseoSansCyrl_900";
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  border: 3px solid #FFB519;
+  cursor: pointer;
+}
+/* line 92, ../scss/pages/_appartaments.scss */
+.appartaments-page__item-show:hover {
+  background-color: #ffffff;
+}
+
+/* line 97, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+/* line 109, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal .wrapper {
+  max-width: 1200px;
+  position: relative;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+/* line 118, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal .btn {
+  max-width: 450px;
+  padding: 12px;
+  margin: 12px auto;
+}
+/* line 122, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal .btn:hover {
+  border-color: #FFB519;
+}
+/* line 128, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal div.btn {
+  background-color: #FFB519;
+}
+/* line 130, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal div.btn:hover {
+  background-color: #ffffff;
+}
+/* line 134, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal a.btn {
+  background-color: #ffffff;
+}
+/* line 136, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal a.btn:hover {
+  background-color: #FFB519;
+}
+/* line 140, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-name {
+  font-size: 48px;
+  font-family: "Cormorant-Regular";
+  color: #4d483e;
+  margin-bottom: 30px;
+}
+/* line 146, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(1) {
+  position: relative;
+  width: 33%;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.66s, .26s width .26s;
+  -webkit-transition: opacity 0.66s, .26s width .26s;
+}
+/* line 153, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* line 158, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(1) svg {
+  opacity: 0;
+  transition: 0.36s;
+  -webkit-transition: 0.36s;
+}
+/* line 163, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(1):hover {
+  opacity: .85;
+}
+/* line 165, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(1):hover svg {
+  opacity: 1;
+}
+/* line 171, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(2) {
+  opacity: 1;
+  width: 28%;
+  margin: 0 5%;
+  overflow: hidden;
+  transition: opacity 0.26s,  .26s width 0.26s;
+  line-height: 1.8;
+}
+/* line 178, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(2) thead {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+/* line 182, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(2) th {
+  font-family: "MuseoSansCyrl_500";
+  font-size: 14px;
+}
+/* line 186, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(2) tbody td {
+  font-family: "MuseoSansCyrl_300";
+  font-size: 14px;
+}
+/* line 192, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(3) {
+  opacity: 1;
+  width: 30%;
+  overflow: hidden;
+  transition: opacity 0.26s, .36s width 0.26s;
+}
+/* line 197, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(3) dl {
+  line-height: 1.8;
+}
+/* line 200, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(3) dd {
+  font-size: 20px;
+}
+/* line 203, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-item:nth-child(3) dt {
+  font-size: 14px;
+  font-family: "MuseoSansCyrl_300";
+}
+/* line 209, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box.shared .appartaments-page__modal-box-item:nth-child(1) {
+  width: 60%;
+}
+/* line 212, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box.shared .appartaments-page__modal-box-item:nth-child(2) {
+  opacity: 0;
+  width: 0%;
+}
+/* line 218, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-box-icon {
+  fill: #FFB519;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+/* line 226, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-phone {
+  display: block;
+  margin: 20px 0;
+}
+/* line 230, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+/* line 236, ../scss/pages/_appartaments.scss */
+.appartaments-page__modal.opened {
+  visibility: visible;
   opacity: 1;
 }
