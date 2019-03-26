@@ -1,9 +1,20 @@
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.j...efore(j,f);'
+})(window,document,'script','dataLayer','GTM-N2SR4QV');</script>
+<!-- End Google Tag Manager -->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.ico">
 <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.ht...TM-N2SR4QV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="hidden__box">
         <svg width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <defs>
@@ -65,12 +76,12 @@
             <nav class="cl-effect-9 flex">
                 <a href="/about.php"><span>Про комплекс</span><span>About</span></a>
                 <a href="/tour.php"><span>Прогулка</span><span>Тур по комплексу</span></a>
-                <a href="/advantages.php"><span>Преимущества</span><span>Advantages</span></a>
+                <a href="/index.php#advantages"><span>Преимущества</span><span>Advantages</span></a>
                 <a href="/appartaments.php"><span>Квартиры</span><span>Appartment</span></a>
                 <a href="/contacts.php"><span>Контакты</span><span>Contacts</span></a>
             </nav>
             <div class="top_icon flex">
-                <a href="#">
+                <a href="/location.php">
                     <svg class="svg_location" width="18" height="20"><use xlink:href="#location"></use></svg>
                 </a>
                 <a href="">

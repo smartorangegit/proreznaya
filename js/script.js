@@ -122,19 +122,38 @@ var yScrollPosition;
 function scrollLoop() {
     xScrollPosition = window.scrollX;
     yScrollPosition = window.scrollY;
+    var ww = window.innerWidth;
 
-    setTranslate(0, yScrollPosition * -0.44 + 1200, par1);
-    setTranslate(0, yScrollPosition * -0.3 + 800, par2);
-    setTranslate(0, yScrollPosition * -0.3 + 800, par3);
-    setTranslate(0, yScrollPosition * -0.2 + 600, par4);
+    if (ww > 1023 ){
 
-    setTranslate(0, yScrollPosition * -0.1 + 00, part1);
-    setTranslate(0, yScrollPosition * -0.3 + 200, part2);
-    setTranslate(0, yScrollPosition * -0.5 + 300, part3);
-    setTranslate(0, yScrollPosition * -0.2 + 400, part4);
+        setTranslate(0, yScrollPosition * -0.44 + 1200, par1);
+        setTranslate(0, yScrollPosition * -0.3 + 800, par2);
+        setTranslate(0, yScrollPosition * -0.3 + 800, par3);
+        setTranslate(0, yScrollPosition * -0.2 + 600, par4);
+
+        setTranslate(0, yScrollPosition * -0.1 + 00, part1);
+        setTranslate(0, yScrollPosition * -0.3 + 200, part2);
+        setTranslate(0, yScrollPosition * -0.5 + 300, part3);
+        setTranslate(0, yScrollPosition * -0.2 + 400, part4);
+
+    } else if (ww < 1023 ){
+
+        setTranslate(0, yScrollPosition * -0.44 + 1200, par1);
+        setTranslate(0, yScrollPosition * -0.3 + 600, par2);
+        setTranslate(0, yScrollPosition * -0.3 + 800, par3);
+        setTranslate(0, yScrollPosition * -0.2 + 600, par4);
+
+        setTranslate(0, yScrollPosition * -0.1 + 200, part1);
+        setTranslate(0, yScrollPosition * -0.3 + 80, part2);
+        setTranslate(0, yScrollPosition * -0.5 + 300, part3);
+        setTranslate(0, yScrollPosition * -0.2 + 160, part4);
+    }
+
+
+
 
     requestAnimationFrame(scrollLoop);
-}
+};
 
 /*анимация прогресбара*/
 
@@ -216,13 +235,22 @@ $(window).bind('scroll load' , function(){
                 // $(this).removeClass("img-animated");
               }
       });
+      $(".content_name").each(function(){
+          elTop = $(this).offset().top;
+            if ( (elTop - h) <= windowTop) {
+              $(this).addClass("before-width");
+              }
+              else{
+                // $(this).removeClass("img-animated");
+              }
+      });
       $(".footer_menu").each(function(){
           elTop = $(this).offset().top;
             if ( (elTop - h) <= windowTop) {
               $(this).addClass("animated");
               }
               else{
-                $(this).removeClass("animated");
+                // $(this).removeClass("animated");
               }
       });
       $(".about-img-js").each(function(){
@@ -400,3 +428,44 @@ switchAccordion = function(e) {
     accordionToggles[i].addEventListener('click', switchAccordion, false);
   }
 })();
+
+/* replace DOM for adaptive*/
+
+$(window).bind('resize load', function(){
+  ww = window.innerWidth;
+  var transBlock = $('.one_right');
+  // var transBlock1 = $('.house-page .floor-page_item');
+  // var transBlock2 = $('.range_info_item:nth-child(2)');
+  // var transBlock3 = $('.floor-page_item');
+  // var transBlock4 = $('.flat_floorplan_mini');
+
+  console.log(ww);
+
+
+  if( ww <= 1024){
+    transBlock.remove();
+    // transBlock1.remove();
+    // transBlock2.remove();
+    // transBlock3.remove();
+    // transBlock4.remove();
+
+    $('.main_slogan').after(transBlock);
+    // $('.house_btn_box').before(transBlock1);
+    // $('.result-section').after(transBlock2);
+    // $('.floor-page__main').after(transBlock3);
+    // $('.flat_plan').after(transBlock4);
+
+  }
+  else if ( ww > 1024) {
+    transBlock.remove();
+    // transBlock1.remove();
+    // transBlock2.remove();
+    // transBlock3.remove();
+    // transBlock4.remove();
+    $('.one_left').after(transBlock);
+    // $('.house-page h1').after(transBlock1);
+    // $('.range_info .range_info_item:nth-child(1)').after(transBlock2);
+    // $('.floor-page__top .content_subname:nth-child(2)').after(transBlock3);
+    // $('.flat-page .fpm_1 .btn-box').after(transBlock4)
+  }
+});

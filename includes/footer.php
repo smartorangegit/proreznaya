@@ -1,12 +1,11 @@
-
 <section class="footer_menu">
     <div class="wrapper flex">
         <div class="footer__item">
             <dl class="footer_column">
                 <dt>Про проект</dt>
                 <dd><a href="/about.php">Про комплекс</a></dd>
-                <dd><a href="/location.php">Расположение</a></dd>
-                <dd><a href="/advantages.php">Преимущества</a></dd>
+                <dd><a href="/contacts.php">Контакты</a></dd>
+                <dd><a href="/index.php#advantages">Преимущества</a></dd>
                 <dd><a href="/infrastructure.php">Инфраструктура</a></dd>
                 <dd><a href="/gallery.php">Галерея</a></dd>
             </dl>
@@ -19,17 +18,17 @@
         <div class="footer__item">
             <dl class="footer_column">
                 <dt>Выбор квартиры:</dt>
-                <dd><a href="/house-page.php">По дому</a></dd>
-                <dd><a href="/filter.php">По параметрам</a></dd>
-                <dd><a href="/1-rooms.php">1-комнатные</a></dd>
-                <dd><a href="/2-rooms.php">2-комнатные</a></dd>
-                <dd><a href="/3-rooms.php">3-комнатные</a></dd>
+                <dd><a href="/akcii.php">Акции</a></dd>
+                <!-- <dd><a href="/filter.php">По параметрам</a></dd> -->
+                <dd><a href="/appartaments.php">1-комнатные</a></dd>
+                <dd><a href="/appartaments.php">2-комнатные</a></dd>
+                <dd><a href="/appartaments.php">3-комнатные</a></dd>
             </dl>
         </div>
         <div class="footer__item">
             <dl class="footer_column">
                 <dt>Строительство:</dt>
-                <dd><a href="/developers.php">Застройщик</a></dd>
+                <dd><a href="/developer.php">Застройщик</a></dd>
                 <dd><a href="/hod-stroitelstva.php">Ход строительства</a></dd>
                 <dd><a href="/news.php">Новости</a></dd>
                 <dd><a href="/video.php">Видео</a></dd>
@@ -83,8 +82,8 @@
                     <dl class="footer_column">
                         <dt>Про проект</dt>
                         <dd><a href="/about.php">Про комплекс</a></dd>
-                        <dd><a href="/location.php">Расположение</a></dd>
-                        <dd><a href="/advantages.php">Преимущества</a></dd>
+                        <dd><a href="/contacts.php">Контакты</a></dd>
+                        <dd><a href="/index.php#advantages">Преимущества</a></dd>
                         <dd><a href="/infrastructure.php">Инфраструктура</a></dd>
                         <dd><a href="/gallery.php">Галерея</a></dd>
                     </dl>
@@ -97,17 +96,17 @@
                 <div class="footer__item">
                     <dl class="footer_column">
                         <dt>Выбор квартиры:</dt>
-                        <dd><a href="/house-page.php">По дому</a></dd>
-                        <dd><a href="/filter.php">По параметрам</a></dd>
-                        <dd><a href="/1-rooms.php">1-комнатные</a></dd>
-                        <dd><a href="/2-rooms.php">2-комнатные</a></dd>
-                        <dd><a href="/3-rooms.php">3-комнатные</a></dd>
+                        <dd><a href="/akcii.php">Акции</a></dd>
+                        <!-- <dd><a href="/filter.php">По параметрам</a></dd> -->
+                        <dd><a href="/appartaments.php">1-комнатные</a></dd>
+                        <dd><a href="/appartaments.php">2-комнатные</a></dd>
+                        <dd><a href="/appartaments.php">3-комнатные</a></dd>
                     </dl>
                 </div>
                 <div class="footer__item">
                     <dl class="footer_column">
                         <dt>Строительство:</dt>
-                        <dd><a href="/developers.php">Застройщик</a></dd>
+                        <dd><a href="/developer.php">Застройщик</a></dd>
                         <dd><a href="/hod-stroitelstva.php">Ход строительства</a></dd>
                         <dd><a href="/news.php">Новости</a></dd>
                         <dd><a href="/video.php">Видео</a></dd>
@@ -155,6 +154,8 @@
 <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" charset="utf-8" src="//istat24.com/js/replace.js"></script>
-<script type="text/javascript">replaceIstatDynamic(1,1273);</script>
+<script type="text/javascript">doReplaceIstat(1273);</script>
+<!-- <script type="text/javascript" charset="utf-8" src="//istat24.com/js/replace.js"></script>
+<script type="text/javascript">replaceIstatDynamic(1,1273);</script> -->
 </body>
 </html>

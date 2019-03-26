@@ -5,7 +5,7 @@
     <title>≡ ЖК "На Прорезной"》 Квартиры в Киеве</title>
 
     <?php include('includes/header.php')?>
-    <?php include('includes/preloader.php')?>
+    <?php //include('includes/preloader.php')?>
 
 
     <section class="one flex">
@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section class="four">
+        <section class="four" id="advantages">
             <div class="four_top flex">
                 <div class="four_top_1" id="js-par-0">
                     <h2 class="text-prev">преимущества</h2>

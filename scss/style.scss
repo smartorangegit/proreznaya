@@ -261,9 +261,11 @@ section{
         transform: none;
         position: absolute;
         right: calc(100% + 46px);
-        width: 120px;
+        width: 0px;
         height: 1px;
         background-color: $text-grey;
+        transition: 0.66s;
+        -webkit-transition: 0.66s;
     }
     &:after{
         content: attr(data-attr);
@@ -274,6 +276,9 @@ section{
         font-size: 24px;
         letter-spacing: 1px;
 
+    }
+    &.before-width:before{
+        width: 130px;
     }
 
 }
@@ -857,11 +862,13 @@ section.contacts{
     max-width: 360px;
     margin: 10px auto;
     padding: 10px 20px;
+
     input{
         display: block;
         height: 60px;
         width: 100%;
         border-bottom: 1px solid $grey;
+        font-size: 20px;
     }
     textarea{
         display: block;
@@ -871,6 +878,7 @@ section.contacts{
         border: none;
         outline: none;
         border-bottom: 1px solid $grey;
+        font-size: 20px;
         margin-top: 20px;
         resize: none;
     }
@@ -980,5 +988,148 @@ footer{
 @import "_menu_modal";
 @import "_animate";
 
-// @import "pages/_documents";
-// @import "pages/_gallery";
+                                            /*styles for tablet*/
+
+@media only screen and (max-width: 1023px) {
+    header nav.flex{
+        display: none;
+    }
+    .content_name.before-width:before {
+    width: 100px;
+}
+    .main_slogan{
+        margin-right: auto;
+        max-width: 550px;
+        padding-left: 120px;
+        .main_subname{
+            padding: 0 20px 16px 20px;
+        }
+    }
+    .one_left{
+        width: 100%;
+        padding: 0 70px;
+        .btn {
+            margin: 24px 0%;
+            max-width: none;
+        }
+    }
+    .one_right{
+        margin-top: -40px;
+        width: 100%;
+        .img-wrap{
+            z-index: -1;
+        }
+    }
+    .one-text{
+        padding: 20px 80px 0;
+    }
+    .scroll_icon{
+        left: auto;
+        right: 20px;
+
+    }
+    section.two{
+        margin-bottom: -300px;
+        .tree--2 {
+            width: 40%;
+            bottom: 300px;
+            right: 10%;
+        }
+    }
+    .two_right{
+        padding-top: 0;
+        flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+    }
+    .two-img-3 {
+        width: 100%;
+    }
+    .two_content {
+        width: 100%;
+        padding: 50% 4% 4% 4%;
+    }
+    .two-img-4{
+        margin: 2%;
+    }
+    .video_inner_left{
+        width: 40%;
+        padding: 0 4%;
+    }
+    .video_inner_right{
+        width: 50%;
+        padding: 0 4% 0 10%;
+    }
+    section.four{
+        .tree--3{
+            width:85%;
+            opacity: .8;
+        }
+    }
+    .four_top_1 {
+        width: 50%;
+        padding: 0 5% 0 180px;
+    }
+    .four_top_2 {
+        width: 55%;
+        padding: 2% 3%;
+    }
+    section.contacts{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        .contacts_left{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: right;
+            display: -webkit-flex;
+            -webkit-justify-content: space-around;
+            padding: 0 80px;
+            .contacts_item{
+                width: 30%;
+            }
+            .social_links {
+                padding-top: 0px;
+                justify-content: flex-end;
+                -webkit-justify-content: flex-end;
+                a{
+                    margin-right: 0;
+                    margin-left: 12px;
+                }
+            }
+        }
+        .contacts_right {
+            width: 100%;
+            padding: 0 80px;
+            .content_name{
+                line-height: 0;
+                font-size: 50px;
+            }
+        }
+        .contacts_img {
+            width: 55%;
+        }
+        .contacts_form {
+            width: 45%;
+        }
+    }
+    .footer_column dd {
+        font-size: 18px;
+    }
+    .top_icon a{
+        margin-left: 24px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

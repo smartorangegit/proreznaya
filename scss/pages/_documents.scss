@@ -139,3 +139,21 @@
     pointer-events: none;
     z-index: 0;
 }
+
+@media only screen and (max-width: 1023px) {
+    .documents{
+        .btn--radius{
+            font-size: 16px;
+        }
+        .wrapper{
+            flex-direction: column;
+        }
+        &__left{
+            width: 80%;
+            margin-bottom: 30px;
+        }
+        &__right{
+            width: 85%;
+        }
+    }
+}

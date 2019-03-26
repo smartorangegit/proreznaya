@@ -44,6 +44,14 @@
     font-family: $cormorant;
     color: $text-grey;
 }
+@media only screen and (max-width: 1023px) {
+    .header-pages h1.content_name {
+        padding-bottom: 20px;
+        font-size: 60px;
+
+    }
+}
+
 @import "pages/_documents";
 @import "pages/_gallery";
 @import "pages/_hod-stroitelstva";
@@ -53,3 +61,7 @@
 @import "pages/_genplan";
 @import "pages/_developer";
 @import "pages/_appartaments";
+@import "pages/_contacts";
+@import "pages/_location";
+@import "pages/_news";
+@import "pages/_tour";

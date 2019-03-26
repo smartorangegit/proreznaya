@@ -90,11 +90,27 @@
         video{
             object-fit: cover;
         }
-
     }
     &--open{
         // display: block;
         visibility: visible;
         opacity: 1;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .video-page__item{
+        .pages-subname {
+            line-height: 1.2;
+        }
+        &-img{
+            height: 220px;
+        }
+        &-descr {
+            padding-right: 60px;
+        }
+        &:nth-child(even) .video-page__item-descr{
+            padding-right: 0px;
+            padding-left: 60px;
+        }
     }
 }
