@@ -157,3 +157,29 @@
         }
     }
 }
+@media only screen and (max-width: 767px) {
+    .documents__left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .documents__right {
+        width: 100%;
+    }
+    .accordionTitle, .accordion__Heading{
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+    .accordionTitle:before, .accordion__Heading:before{
+        right: 30px;
+    }
+    .accordeon__btn-box.flex{
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    .documents-accordeon .btn--radius {
+        margin: 10px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+}

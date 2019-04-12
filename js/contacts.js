@@ -16,7 +16,8 @@ $(function() {
         var pos = new google.maps.LatLng(marker[2], marker[3]);
         var content = marker[6];
         var markerIcon = {
-            url : marker[5]
+            url : marker[5],
+            anchor: new google.maps.Point(0, 90),
         };
 
         marker1 = new google.maps.Marker({

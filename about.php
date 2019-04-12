@@ -58,7 +58,7 @@
             <img src="/img/about/ab-4.jpg" alt="Решение для комфортной жизни">
         </div>
         <div class="about-comfort-1__item">
-            <div class="about__descr">
+            <div id="about-descr" class="about__descr">
                 <h3 class="text-prev">Локация </h3>
                 <div class="content_name wow fadeIn" data-attr="02">
                     Расположение
@@ -67,12 +67,12 @@
                     Экологически чистый пригород Киева в направлении Ирпень-Буча-Ворзель. 8 км по «Варшавской трассе» от КП Киева и вы в центре лесного массива, где расположен новый ЖК  «На Прорезной». Теперь ул. Прорезная  обрела совершенно новый европейский вид. Предусматривается  светофор при выезде на ул. Шевченко (Варшавская трасса) и пешеходный переход.  Адаптированы маршруты общественного транспорта под наличие остановок  возле нашего Жилого Комплекса.
                 </div>
             </div>
-            <div class="content_name wow fadeIn with-bloquotes">
+            <div id="transblock2" class="content_name wow fadeIn with-bloquotes">
                 <p>Европейское </p>
                 <p>качество</p>
             </div>
         </div>
-        <div class="about-comfort-1__item about-img-js">
+        <div id="about-img-5" class="about-comfort-1__item about-img-js">
             <img src="/img/about/ab-5.jpg" alt="Решение для комфортной жизни">
         </div>
     </section>

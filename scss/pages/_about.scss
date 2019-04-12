@@ -328,10 +328,8 @@
     }
 }
 .about-developer{
-
     .wrapper{
         max-width: 1200px;
-
     }
     &__descr{
         padding-left: 13%;
@@ -347,4 +345,228 @@
             width: 100%;
         }
     }
+}
+@media only screen and (max-width: 1023px) {
+    .about-complex{
+
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        .text-prev{
+            transform: none;
+            -webkit-transform: none;
+        }
+        &__left{
+            width: 100%;
+            padding: 0 60px;
+        }
+        &__descr{
+            position: static;
+        }
+        &__diploms img{
+            max-width: 146px;
+        }
+        &__diploms img:nth-child(2) {
+            left: 120px;
+        }
+        .content_name {
+            font-size: 60px;
+            line-height: .8;
+        }
+        &__right {
+            width: 100%;
+            height: 400px;
+            margin-top: 0px;
+        }
+    }
+    .about-comfort{
+        .content_name{
+            font-size: 58px;
+        }
+    }
+    .about-comfort__img-item:nth-child(1) {
+        width: 52%;
+        height: 320px;
+    }
+    .about-comfort-1.flex{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        .text-prev{
+            transform: none;
+            -webkit-transform: none;
+        }
+        .about-comfort-1__item:nth-child(2){
+            width: 65%;
+        }
+        .about-comfort-1__item:nth-child(3) {
+            width: 63%;
+            margin: -160px 0 0 auto;
+        }
+    }
+    .about-park.flex{
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        margin-top: 30px;
+        .text-prev{
+            transform: none;
+            -webkit-transform: none;
+        }
+    }
+    .about-park__left{
+        width: 100%;
+        padding: 0 80px;
+        margin-left: 0;
+    }
+    .about-park__descr{
+        width: 100%;
+        padding: 60px 80px 0 18%;
+        .content_name, .content_text{
+            max-width: none;
+        }
+    }
+    .about-techologies__item {
+        width: 50%;
+        height: 200px;
+        padding: 4px;
+    }
+
+}
+@media only screen and (max-width: 767px) {
+    .about-complex{
+        .text-prev{
+            left: -4px;
+        }
+        .content_name {
+            font-size: 42px;
+            line-height: .8;
+            margin: 0 auto 0 42px;
+        }
+        &__left{
+            width: 100%;
+            padding: 10px;
+            flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+        }
+        &__descr{
+            width: 100%;
+            .content_text{
+                padding: 12px;
+            }
+        }
+        &__diploms {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            display: -webkit-flex;
+            -webkit-justify-content: space-around;
+            align-items: baseline;
+            -webkit-align-items: baseline;
+            img{max-width: 120px;}
+            img:nth-child(2){
+                position: static;
+            }
+        }
+        &__right{
+            height: 220px;
+        }
+    }
+    .about-comfort {
+        .content_name {
+            font-size: 42px;
+            margin: 0 20px;
+            max-width: 100%;
+        }
+        &__images{
+            width: 100%;
+            flex-direction: column;
+            -webkit-flex-direction: column;
+        }
+        &__img-item:nth-child(1) {
+            width: 100%;
+            height: 220px;
+        }
+        &__img-item:nth-child(2) {
+            width: 89%;
+            margin: 5%;
+        }
+    }
+    .content_name.with-bloquotes:after{
+        top: -50px;
+        right: -50px;
+    }
+    .about-comfort-1{
+        padding-top: 0;
+        .content_name{
+            font-size: 42px;
+        }
+        &.flex {
+            flex-direction: column;
+            -webkit-flex-direction: column;
+            .about-comfort-1__item:nth-child(2) {
+                width: 100%;
+            }
+            .about-comfort-1__item:nth-child(3) {
+                width: 80%;
+                margin: 0px auto;
+            }
+        }
+        &__item:nth-child(1) {
+            display: none;
+        }
+        & .about__descr {
+            top: 0px;
+            padding: 0px 20px 0 60px;
+            background-color: #ffffff;
+            z-index: 2;
+        }
+    }
+    .about-park{
+        padding-bottom: 0;
+        &__left{
+            width: 100%;
+            padding: 0 20px;
+        }
+        &__slider{
+            .slick-arrow {
+                width: 40px;
+                height: 40px;
+            }
+            .controls-right {
+                left: 40px;
+            }
+            .controls-left {
+                left: 0px;
+                z-index: 2;
+            }
+        }
+        &__slider-item {
+            height: 260px;
+        }
+        &__descr {
+            width: 100%;
+            padding: 52px 10px 0 20%;
+            .text-prev{
+                left: 20px;
+            }
+        }
+    }
+    .about-techologies__item {
+        width: 100%;
+        height: 160px;
+        padding: 4px;
+    }
+    .about-developer{
+        padding: 10px;
+        .wrapper{
+            flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+        }
+        &__descr{
+            padding-left: 20%;
+
+        }
+        &__img{
+            padding-left: 60px;
+        }
+    }
+
 }

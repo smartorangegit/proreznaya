@@ -1,7 +1,7 @@
-<section class="footer_menu">
+<section class="footer_menu ">
     <div class="wrapper flex">
         <div class="footer__item">
-            <dl class="footer_column">
+            <dl id="socialpos1" class="footer_column">
                 <dt>Про проект</dt>
                 <dd><a href="/about.php">Про комплекс</a></dd>
                 <dd><a href="/contacts.php">Контакты</a></dd>
@@ -9,7 +9,7 @@
                 <dd><a href="/infrastructure.php">Инфраструктура</a></dd>
                 <dd><a href="/gallery.php">Галерея</a></dd>
             </dl>
-            <div class="social_links flex">
+            <div id="social1" class="social_links flex">
                 <a href="#"><svg class="svg_youtube" width="20" height="20"><use xlink:href="#youtube-1"></use></svg></a>
                 <a href="#"><svg class="svg_insta" width="20" height="13"><use xlink:href="#instagram"></use></svg></a>
                 <a href="#"><svg class="svg_fb" width="20" height="16"><use xlink:href="#fb"></use></svg></a>
@@ -47,11 +47,11 @@
                     </a>
                 </dd>
             </dl>
-            <div class="button svg-wrapper">
+            <div id="socialpos2" class="button svg-wrapper">
                 <svg height="40" width="100%" xmlns="http://www.w3.org/2000/svg">
                     <rect id="shape" height="40" width="100%" />
                     <div id="text">
-                        <a href=""><span class="spot"></span>Обратный звонок</a>
+                        <div class="md-trigger" data-modal="modal-5"><span class="spot"></span>Обратный звонок</div>
                     </div>
                 </svg>
             </div>
@@ -72,14 +72,15 @@
     </div>
 </footer>
 
+
 <!-- modal menu -->
 
 <div class="cd-modal">
     <div class="modal-content">
-        <section class="footer_menu">
+        <section class="footer_menu animated">
             <div class="wrapper flex">
                 <div class="footer__item">
-                    <dl class="footer_column">
+                    <dl id="socialpos2-1" class="footer_column">
                         <dt>Про проект</dt>
                         <dd><a href="/about.php">Про комплекс</a></dd>
                         <dd><a href="/contacts.php">Контакты</a></dd>
@@ -87,7 +88,7 @@
                         <dd><a href="/infrastructure.php">Инфраструктура</a></dd>
                         <dd><a href="/gallery.php">Галерея</a></dd>
                     </dl>
-                    <div class="social_links flex">
+                    <div id="social2" class="social_links flex">
                         <a href="#"><svg class="svg_youtube" width="20" height="20" fill="#ffffff"><use xlink:href="#youtube-1"></use></svg></a>
                         <a href="#"><svg class="svg_insta" width="20" height="13" fill="#ffffff"><use xlink:href="#instagram"></use></svg></a>
                         <a href="#"><svg class="svg_fb" width="20" height="16" fill="#ffffff"><use xlink:href="#fb"></use></svg></a>
@@ -127,11 +128,11 @@
                             </a>
                         </dd>
                     </dl>
-                    <div class="button svg-wrapper">
+                    <div id="socialpos2-2" class="button svg-wrapper">
                         <svg height="40" width="100%" xmlns="http://www.w3.org/2000/svg">
                             <rect id="shape" height="40" width="100%" />
                             <div id="text">
-                                <a href=""><span class="spot"></span>Обратный звонок</a>
+                                <div class="md-trigger" data-modal="modal-5"><span class="spot"></span>Обратный звонок</div>
                             </div>
                         </svg>
                     </div>
@@ -149,9 +150,33 @@
     <div class="bg-layer"></div>
 </div> <!-- .cd-transition-layer -->
 
+<!-- всплывающая форма -->
+<div class="md-modal" id="modal-5">
+  <div class="md-content">
+    <div class="content_name">Обратный звонок </div>
+    <div class="contacts_form">
+        <form class="main_form" action="#" method="">
+            <input type="name" name="" value="" placeholder="Ваше имя *">
+            <input type="tel" name="" value="" placeholder="Номер телефона *">
+            <button class='btn btn-white' href='#'>
+                Отправить
+                <span class='line-1'></span><span class='line-2'></span><span class='line-3'></span><span class='line-4'></span>
+            </button>
+        </form>
+    </div>
+    <div class="close_callback md-close" id="closeModal">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ffffff"></path><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#ffffff"></path></svg>
+    </div>
+  </div>
+</div>
+<div class="md-overlay"></div>
 
+<!-- конец всплывающая форма -->
+<!-- </div> -->
+<!-- end #main -->
 
 <script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- <script src="/js/jquery.smoothState.js"></script> -->
 <script src="/js/script.js"></script>
 <script type="text/javascript" charset="utf-8" src="//istat24.com/js/replace.js"></script>
 <script type="text/javascript">doReplaceIstat(1273);</script>

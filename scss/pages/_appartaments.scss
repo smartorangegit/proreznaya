@@ -238,3 +238,75 @@
         opacity: 1;
     }
 }
+@media only screen and (max-width: 1023px) {
+    .appartaments-page__link{
+        font-size: 16px;
+    }
+    .appartaments-page__modal-phone {
+        margin: 14px 0;
+    }
+    .appartaments-page__modal .btn {
+        padding: 8px;
+        margin: 8px auto;
+        letter-spacing: 1px;
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .appartaments-page{
+        &__tabs.flex{
+            flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+        }
+        &__link{
+            width: 100%;
+            margin-bottom: 0;
+        }
+        &__tabs-container{
+            padding-top: 24px;
+        }
+        &__slider{
+            padding: 0 10px;
+            .slick-arrow{
+                transform: translateY(0);
+                top: -6px;
+            }
+            .controls-left{
+                transform: scale(-1);
+            }
+        }
+        &__modal .wrapper {
+            overflow-y: auto;
+            height: inherit;
+            top: 0%;
+            left: 0%;
+            transform: none;
+            -webkit-transform: none;
+        }
+        &__modal-name{
+            font-size: 36px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        &__modal-box.flex{
+            flex-direction: column;
+            -webkit-flex-direction: column;
+        }
+        &__modal-box-item:nth-child(1){
+            width: 100%;
+            pointer-events: none;
+        }
+        &__modal-box-icon{
+            display: none;
+        }
+        &__modal-box-item:nth-child(2){
+            width: 100%;
+            max-width: 320px;
+        }
+        &__modal-box-item:nth-child(3) {
+            width: 100%;
+            max-width: 320px;
+
+        }
+    }
+}

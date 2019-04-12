@@ -13,7 +13,7 @@ var slickOptions = {
              }
          },
          {
-             breakpoint: 600,
+             breakpoint: 800,
              settings: {
                  slidesToShow: 2,
              }
@@ -26,38 +26,38 @@ var slickOptions = {
          }
      ]
  };
+ 
+ var containerId = '#apptabs-container';
+ var tabsId = '#apptabs';
 
-var containerId = '#apptabs-container';
-var tabsId = '#apptabs';
+ $(document).ready(function(){
 
-$(document).ready(function(){
+     if($(tabsId + ' li.current a').length > 0){
+         loadTab($(tabsId + ' li.current a'));
+     }
+     $(tabsId + ' a').click(function(){
+         if($(this).parent().hasClass('current')){ return false; }
 
-if($(tabsId + ' li.current a').length > 0){
- loadTab($(tabsId + ' li.current a'));
-}
-$(tabsId + ' a').click(function(){
- if($(this).parent().hasClass('current')){ return false; }
+         $(tabsId + ' li.current').removeClass('current');
+         $(this).parent().addClass('current');
 
- $(tabsId + ' li.current').removeClass('current');
- $(this).parent().addClass('current');
-
- loadTab($(this));
- return false;
-});
-});
+         loadTab($(this));
+         return false;
+     });
+ });
 
 function loadTab(tabObj){
-if(!tabObj || !tabObj.length){ return; }
-$(containerId).addClass('loading');
-$(containerId).fadeOut('fast');
+    if(!tabObj || !tabObj.length){ return; }
+    $(containerId).addClass('loading');
+    $(containerId).fadeOut('fast');
 
-$(containerId).load(tabObj.attr('href'), function(){
+    $(containerId).load(tabObj.attr('href'), function(){
 
- $('.appartaments-page__slider').slick(slickOptions);
+        $('.appartaments-page__slider').slick(slickOptions);
 
- $(containerId).removeClass('loading');
- $(containerId).fadeIn('fast');
-});
+        $(containerId).removeClass('loading');
+        $(containerId).fadeIn('fast');
+    });
 }
 
 /*      */
@@ -78,50 +78,48 @@ function closeAppModal(){
 }
     appClose.addEventListener('click', closeAppModal )
 
-  $("body").on('click','.appartaments-page__item-show',function(){
+    $("body").on('click','.appartaments-page__item-show',function(){
 
-      /*Для примера приведены только дата-параметры с изображением и типом квартиры*/
+        /*Для примера приведены только дата-параметры с изображением и типом квартиры*/
 
-      var appImg = this.parentElement.dataset.img;
-      var appType = this.parentElement.dataset.type;
+        var appImg = this.parentElement.dataset.img;
+        var appType = this.parentElement.dataset.type;
 
-      $('.appartaments-page__modal-box-img').attr('src', '/img/appartaments/full-img/'+appImg+'');
-      $('.appartaments-page__modal-name').text(appType);
+        $('.appartaments-page__modal-box-img').attr('src', '/img/appartaments/full-img/'+appImg+'');
+        $('.appartaments-page__modal-name').text(appType);
 
-      openAppModal()
+        openAppModal()
 
 
-  });
- var modalAppBox = document.querySelector('.appartaments-page__modal-box');
-  var imgBox = document.querySelector('.appartaments-page__modal-box-img');
-  var zoomIn = document.querySelector('.zoom-in');
-  var zoomOut = document.querySelector('.zoom-out');
-  console.log(imgBox);
+    });
+    var modalAppBox = document.querySelector('.appartaments-page__modal-box');
+    var imgBox = document.querySelector('.appartaments-page__modal-box-img');
+    var zoomIn = document.querySelector('.zoom-in');
+    var zoomOut = document.querySelector('.zoom-out');
+    // console.log(imgBox);
 
-  // var imgBoxItem = imgBox[0];
+    // var imgBoxItem = imgBox[0];
 
-  imgBox.addEventListener("click", function() {
+    imgBox.addEventListener("click", function() {
 
-      if ( modalAppBox.classList.contains('shared')){
-          // console.log('есть)';
-          zoomOutImgBox()
-      }
-      else {
-          // console.log('нет');
-          zoomInImgBox()
-      }
+        if ( modalAppBox.classList.contains('shared')){
+            zoomOutImgBox()
+        }
+        else {
+            zoomInImgBox()
+        }
 
-  })
+    })
 
-  function zoomInImgBox(){
-      modalAppBox.classList.add('shared')
-      zoomIn.style.display = 'none';
-      zoomOut.style.display = 'block';
+    function zoomInImgBox(){
+        modalAppBox.classList.add('shared')
+        zoomIn.style.display = 'none';
+        zoomOut.style.display = 'block';
 
-  }
+    }
 
-  function zoomOutImgBox(){
-      modalAppBox.classList.remove('shared')
-       zoomOut.style.display = 'none';
-      zoomIn.style.display = 'block'
-  }
+    function zoomOutImgBox(){
+        modalAppBox.classList.remove('shared')
+        zoomOut.style.display = 'none';
+        zoomIn.style.display = 'block'
+    }

@@ -81,32 +81,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <a href="/contacts.php"><span>Контакты</span><span>Contacts</span></a>
             </nav>
             <div class="top_icon flex">
-                <a href="/location.php">
+                <a href="/infrastructure.php">
                     <svg class="svg_location" width="18" height="20"><use xlink:href="#location"></use></svg>
                 </a>
-                <a href="">
+                <a href="/contacts.php" >
                     <svg class="svg_email" width="16" height="16"><use xlink:href="#email"></use></svg>
                 </a>
-                <a href="#">
+                <div class="md-trigger" data-modal="modal-5" style="cursor:pointer;">
                     <svg class="svg_phone" width="16" height="16"><use xlink:href="#phone"></use></svg>
-                </a>
+                </div>
             </div>
             <div class="top_phone">
                 <span class="phone" id="istat_3">(063) 220 06 06</span>
             </div>
+            <div class="header-buttons is-mobile">
+                <div class="button-menu cd-modal-trigger">
+                    <div class="first-letter-menu">m e</div>
+                    <div class="second-letter-menu">n u</div>
+                    <div class="icon-burger">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                </div>
+                <div class="button-callback md-trigger" data-modal="modal-5">
+                    <div class="button-callback_icon">
+                        <svg class="svg_phone" width="30" height="30"><use xlink:href="#phone"></use></svg>
+                    </div>
+                    <span>связь</span>
+                </div>
+            </div>
         </div>
     </header>
-    <div class="header-buttons">
+    <div class="header-buttons no-mobile">
         <div class="button-menu cd-modal-trigger">
-            <div class="">m e</div>
-            <div class="">n u</div>
+            <div class="first-letter-menu">m e</div>
+            <div class="second-letter-menu">n u</div>
             <div class="icon-burger">
                 <div class="burger-line"></div>
                 <div class="burger-line"></div>
                 <div class="burger-line"></div>
             </div>
         </div>
-        <div class="button-callback">
+        <div class="button-callback md-trigger" data-modal="modal-5">
             <div class="button-callback_icon">
                 <svg class="svg_phone" width="30" height="30"><use xlink:href="#phone"></use></svg>
             </div>

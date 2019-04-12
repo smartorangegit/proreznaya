@@ -92,7 +92,6 @@
         }
     }
     &--open{
-        // display: block;
         visibility: visible;
         opacity: 1;
     }
@@ -113,4 +112,28 @@
             padding-left: 60px;
         }
     }
+}
+@media only screen and (max-width:  767px) {
+    .video-page__item.flex {
+        flex-direction: column;
+        -webkit-flex-direction: column
+    }
+    .video-page__item-img {
+        height: 185px;
+        width: 100%;
+    }
+    .video-page__item-descr{
+        width: 100%;
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+    .video-page .pages-subname {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+
+
+
 }

@@ -260,3 +260,13 @@ button.mfp-close:active {
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
+
+@media only screen and (max-width: 768px) {
+    html:not(.touch) .gallery-image figcaption,
+    .touch .gallery-image figcaption,
+    .mfp-with-zoom .mfp-title {
+        max-width: calc(100% - 5em);
+        font-size: 12px;
+    }
+
+}

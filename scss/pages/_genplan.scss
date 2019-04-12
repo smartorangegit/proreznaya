@@ -43,3 +43,24 @@
     font-family: "PoiretOne-Regular";
     font-size: 20px;
 }
+@media only screen and (max-width: 767px) {
+    .genplan-page .header-pages {
+        position: static;
+        color: #000000;
+        padding-top: 24px;
+    }
+    .genplan-page:after{
+        content: none;
+    }
+    .genplan-page .header-pages .content_name {
+        color: #000;
+        padding-bottom: 16px;
+        margin-bottom: 10px;
+        text-shadow: 0 0 0px #000;
+    }
+    .genplan-page .header-pages .breadcrumbs {
+    text-shadow: 0 0 0px #000;
+}
+
+
+}

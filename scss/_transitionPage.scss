@@ -1,0 +1,147 @@
+// animate 2 bocks
+@keyframes left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.blind__left, .blind__right {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  z-index: 100;
+  background: #000005;
+}
+
+.blind__left {
+  left: -51%;
+}
+
+.blind__right {
+  right: -51%;
+}
+
+.page {
+  .scene_element {
+    animation-duration: 1.8s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 1000;
+  }
+  .scene_element_left {
+    animation-name: left;
+  }
+  .scene_element_right {
+    animation-name: right;
+  }
+}
+.page.is-exiting {
+  .scene_element_left {
+    animation-direction: reverse;
+  }
+  .scene_element_right {
+    animation-direction: reverse;
+  }
+}
+// animate 2 bocks end
+
+
+
+
+//animate fadeIn
+@keyframes fadeInRight100 {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft100 {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.page {
+  .scene_element {
+    animation-duration: 1.8s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 1000;
+  }
+  .scene_element--fadein {
+    animation-name: fadeInRight100;
+  }
+}
+.page.is-exiting {
+  .scene_element--fadein {
+    animation-name: fadeInLeft100;
+  }
+}
+//animate fadeiIn end
+
+
+//animate rotate
+@keyframes threeD {
+  from {
+    transform: rotateY(90deg)
+  }
+  95%,to {
+    transform: rotateY(0deg)
+  }
+}
+
+@keyframes threeDend {
+  from {
+    transform: rotateY(0deg)
+  }
+  95%,to {
+    transform: rotateY(-90deg)
+  }
+}
+
+.page {
+  overflow: hidden;
+  perspective: 1900px;
+  perspective-origin: 58% 0%;
+  .scene_element {
+    animation-duration: 1.8s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    z-index: 1000;
+  }
+  .threeD {
+    transform-style: preserve-3d;
+    animation-name: threeD;
+    backface-visibility: hidden;
+  }
+}
+
+.page.is-exiting {
+  .threeD {
+    animation-name: threeDend;
+  }
+}
+// animate rotate and

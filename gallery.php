@@ -56,12 +56,7 @@
                     <figcaption>Увеличить</figcaption>
                 </figure>
             </a>
-            <!-- <a class='gallery-link' href='https://unsplash.it/1600/1000?image=682'>
-                <figure class='gallery-image'>
-                    <img height='1000' src='https://unsplash.it/1600/1000?image=682' width='1600'>
-                    <figcaption>Увеличить</figcaption>
-                </figure>
-            </a> -->
+
         </article>
     </section>
 
@@ -94,7 +89,7 @@
                          tCounter: '' },
 
                          disableOn: function () {
-                             if ($(window).width() < 640) {
+                             if ($(window).width() < 300) {
                                  return false;
                              }
                              return true;
